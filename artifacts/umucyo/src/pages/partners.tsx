@@ -11,6 +11,7 @@ import coffeeImg from "@/assets/hero-coffee.png";
 import womenImg from "@/assets/women-farmers.png";
 import rwandaImg from "@/assets/rwanda-landscape.png";
 import meetingImg from "@/assets/coop-meeting.png";
+import hortImg from "@/assets/horticulture.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
