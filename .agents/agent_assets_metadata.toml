@@ -1,0 +1,38 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "iGZaSUn3z_nsoHB9MuslF"
+uri = "file://artifacts/umucyo/src/assets/hero-coffee.png"
+type = "image"
+title = "Rwandan coffee fields landscape"
+
+[[generated]]
+id = "ydGp-ee-pC0nOHZhTHgpV"
+uri = "file://artifacts/umucyo/src/assets/women-farmers.png"
+type = "image"
+title = "Rwandan women farmers working"
+
+[[generated]]
+id = "mvFFVh8gpEnHOC3qDmVXd"
+uri = "file://artifacts/umucyo/src/assets/horticulture.png"
+type = "image"
+title = "Horticulture crops harvest"
+
+[[generated]]
+id = "GvWcaFOcdCC1A-V8tQ0GN"
+uri = "file://artifacts/umucyo/src/assets/coop-meeting.png"
+type = "image"
+title = "Women cooperative meeting"
+
+[[generated]]
+id = "tPtnBZzK2TtT7lHI5LNDG"
+uri = "file://artifacts/umucyo/src/assets/rwanda-landscape.png"
+type = "image"
+title = "Rwanda highlands landscape"
+
+[[generated]]
+id = "-zWSkFIA-HKYbE-r7ZDzt"
+uri = "file://artifacts/umucyo/src/assets/coffee-processing.png"
+type = "image"
+title = "Coffee processing and roasting"
