@@ -144,6 +144,123 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Leadership Team */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Leadership</h2>
+            <h3 className="text-4xl font-serif font-bold text-primary mb-4">The people driving our mission.</h3>
+            <p className="text-muted-foreground text-lg">
+              Umucyo is governed by women who have lived the challenges of Rwandan smallholder farming — and built the skills to transform it.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                name: "Marie-Claire Uwimana",
+                title: "Chairperson",
+                bio: "A pioneer in Rwanda's women-led cooperative movement with over 15 years in coffee agribusiness and cooperative governance.",
+                initials: "MCU",
+              },
+              {
+                name: "Josephine Mukamana",
+                title: "Vice Chairperson & Head of Production",
+                bio: "Leading quality standards across the coffee value chain — from good agricultural practices to export-grade processing.",
+                initials: "JM",
+              },
+              {
+                name: "Annonciata Ingabire",
+                title: "Secretary General",
+                bio: "Responsible for cooperative governance, member relations, and compliance with national cooperative regulations.",
+                initials: "AI",
+              },
+              {
+                name: "Dancille Nyiraneza",
+                title: "Treasurer & Finance Lead",
+                bio: "Overseeing financial management, member savings mobilization, and cooperative investment planning.",
+                initials: "DN",
+              },
+              {
+                name: "Pélagie Uwineza",
+                title: "Head of Horticulture",
+                bio: "Managing horticulture value chains, market linkages, and sustainable crop production across member farms.",
+                initials: "PU",
+              },
+              {
+                name: "Clarisse Mutoni",
+                title: "Training & Capacity Building Lead",
+                bio: "Designing and delivering farmer training programs in agronomy, financial literacy, and climate-smart agriculture.",
+                initials: "CM",
+              },
+              {
+                name: "Vestine Umuhoza",
+                title: "Market Linkages & Export Officer",
+                bio: "Building relationships with domestic and international buyers, facilitating trade connections and export compliance.",
+                initials: "VU",
+              },
+              {
+                name: "Olive Ishimwe",
+                title: "Youth & Women's Empowerment Officer",
+                bio: "Coordinating youth employment programs, skills development initiatives, and women's economic inclusion activities.",
+                initials: "OI",
+              },
+            ].map((person, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.07 }}
+                className="group flex flex-col"
+                data-testid={`card-leader-${i}`}
+              >
+                <div className="w-full aspect-square rounded-2xl bg-primary/10 flex items-center justify-center mb-5 overflow-hidden group-hover:bg-primary/20 transition-colors">
+                  <span className="font-serif font-bold text-4xl text-primary">{person.initials}</span>
+                </div>
+                <h4 className="font-bold text-lg text-primary">{person.name}</h4>
+                <p className="text-secondary text-sm font-semibold mb-2">{person.title}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{person.bio}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Governance */}
+      <section className="py-20 bg-primary text-white">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Structure</h2>
+              <h3 className="text-4xl font-serif font-bold text-white mb-6">Democratic cooperative governance.</h3>
+              <p className="text-white/80 text-lg mb-8">
+                Umucyo operates under Rwanda's cooperative law with a democratic, member-driven governance structure. All strategic decisions are made collectively, with elected leadership accountable to the full membership.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { value: "90%", label: "Women in leadership & membership" },
+                { value: "Annual", label: "General Assembly for all members" },
+                { value: "Elected", label: "Board accountable to members" },
+                { value: "NAEB", label: "Registered & regulated exporter" },
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center"
+                >
+                  <div className="text-3xl font-serif font-bold text-secondary mb-2">{item.value}</div>
+                  <div className="text-white/70 text-sm">{item.label}</div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

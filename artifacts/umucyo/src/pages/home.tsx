@@ -198,6 +198,101 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <section className="py-24 lg:py-32 bg-card">
+        <div className="container mx-auto px-6 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Member Voices</h2>
+            <h3 className="text-4xl lg:text-5xl font-serif font-bold text-primary">
+              Stories from our cooperative.
+            </h3>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                quote: "Joining Umucyo changed everything for my family. I now earn three times what I made before, and my daughters are in school because of what we built together.",
+                name: "Immaculée Mukamana",
+                role: "Coffee Farmer, Member since 2022",
+                location: "Huye District",
+              },
+              {
+                quote: "The training on post-harvest handling was transformative. Our coffee quality improved so much that we now attract buyers from Europe who pay premium prices.",
+                name: "Claudine Uwimana",
+                role: "Cooperative Treasurer",
+                location: "Nyamagabe District",
+              },
+              {
+                quote: "As a young woman, I never imagined leading an agribusiness. Umucyo gave me the skills, the confidence, and the market connections to make it real.",
+                name: "Yvette Ingabire",
+                role: "Youth Member & Horticulture Lead",
+                location: "Kigali",
+              },
+            ].map((t, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, delay: i * 0.15 }}
+                className="bg-background rounded-3xl p-8 border border-border flex flex-col gap-6"
+                data-testid={`card-testimonial-${i}`}
+              >
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, s) => (
+                    <svg key={s} className="w-4 h-4 text-secondary fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <blockquote className="text-foreground text-lg leading-relaxed font-serif italic flex-1">
+                  "{t.quote}"
+                </blockquote>
+                <div className="border-t border-border pt-6">
+                  <div className="font-bold text-primary">{t.name}</div>
+                  <div className="text-sm text-muted-foreground">{t.role}</div>
+                  <div className="text-sm text-secondary font-medium mt-1">{t.location}</div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { label: "For Buyers & Exporters", title: "Source Premium Rwandan Coffee", desc: "View product specs, harvest calendars, and trade terms.", href: "/products", cta: "View Products" },
+              { label: "For Donors & Partners", title: "See Our Impact", desc: "Explore SDG alignment, impact metrics, and funding opportunities.", href: "/impact", cta: "Our Impact" },
+              { label: "For Government", title: "Partner With Us", desc: "Learn how we align with Rwanda's NST1, Vision 2050, and PSTA4.", href: "/impact", cta: "Learn More" },
+            ].map((card, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="bg-primary/5 border border-primary/20 rounded-2xl p-8 flex flex-col"
+                data-testid={`card-cta-${i}`}
+              >
+                <span className="text-xs font-bold tracking-widest text-secondary uppercase mb-3">{card.label}</span>
+                <h4 className="text-xl font-serif font-bold text-primary mb-3">{card.title}</h4>
+                <p className="text-muted-foreground text-sm flex-1 mb-6">{card.desc}</p>
+                <Button asChild variant="outline" className="rounded-full border-primary text-primary hover:bg-primary hover:text-white self-start">
+                  <Link href={card.href}>{card.cta} <ArrowRight className="ml-2 w-4 h-4" /></Link>
+                </Button>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
