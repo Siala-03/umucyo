@@ -18,8 +18,8 @@ import {
 } from "lucide-react";
 import { Link } from "wouter";
 
-import rwandaImg from "@/assets/rwanda-landscape.png";
-import womenImg from "@/assets/women-farmers.png";
+import rwandaImg from "@/assets/rwanda-landscape.webp";
+import womenImg from "@/assets/women-farmers.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -52,6 +52,8 @@ const inquiryCategories = [
   { value: "Other", label: "Other Inquiry" },
 ];
 
+const CONTACT_EMAIL = "uwomencooperative@gmail.com";
+
 export default function Contact() {
   const { toast } = useToast();
 
@@ -62,13 +64,36 @@ export default function Contact() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: "Message Sent Successfully",
-      description: "Thank you for reaching out. Our team will respond within 48 business hours.",
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${CONTACT_EMAIL}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `New inquiry from ${values.organization} (${values.inquiryType})`,
+          Name: values.name,
+          Email: values.email,
+          Organization: values.organization,
+          Country: values.country,
+          "Inquiry Type": values.inquiryType,
+          Message: values.message,
+        }),
+      });
+
+      if (!response.ok) throw new Error("Submission failed");
+
+      toast({
+        title: "Message Sent Successfully",
+        description: "Thank you for reaching out. Our team will respond within 48 business hours.",
+      });
+      form.reset();
+    } catch {
+      toast({
+        title: "Something went wrong",
+        description: `Please try again, or email us directly at ${CONTACT_EMAIL}.`,
+        variant: "destructive",
+      });
+    }
   }
 
   return (

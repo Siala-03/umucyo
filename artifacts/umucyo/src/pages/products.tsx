@@ -5,9 +5,9 @@ import {
   ArrowRight, CheckCircle2, Package, Thermometer, Droplets,
   Mountain, Calendar, Award, FlaskConical, Leaf, Star
 } from "lucide-react";
-import coffeeImg from "@/assets/hero-coffee.png";
-import processingImg from "@/assets/coffee-processing.png";
-import hortImg from "@/assets/horticulture.png";
+import coffeeImg from "@/assets/hero-coffee.webp";
+import processingImg from "@/assets/coffee-processing.webp";
+import hortImg from "@/assets/horticulture.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },

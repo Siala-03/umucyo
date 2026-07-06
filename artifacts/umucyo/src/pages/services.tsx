@@ -7,12 +7,12 @@ import {
   Package, FlaskConical, Droplets, Sun, BookOpen, ShieldCheck
 } from "lucide-react";
 
-import coffeeImg from "@/assets/hero-coffee.png";
-import processingImg from "@/assets/coffee-processing.png";
-import hortImg from "@/assets/horticulture.png";
-import womenImg from "@/assets/women-farmers.png";
-import meetingImg from "@/assets/coop-meeting.png";
-import rwandaImg from "@/assets/rwanda-landscape.png";
+import coffeeImg from "@/assets/hero-coffee.webp";
+import processingImg from "@/assets/coffee-processing.webp";
+import hortImg from "@/assets/horticulture.webp";
+import womenImg from "@/assets/women-farmers.webp";
+import meetingImg from "@/assets/coop-meeting.webp";
+import rwandaImg from "@/assets/rwanda-landscape.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -37,10 +37,6 @@ export default function Services() {
         </div>
         <div className="container relative z-10 mx-auto px-6 lg:px-12 text-center">
           <motion.div initial="hidden" animate="visible" variants={stagger}>
-            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
-              <span className="w-2 h-2 rounded-full bg-secondary" />
-              <span className="text-sm font-semibold tracking-wide text-white">Full Value Chain</span>
-            </motion.div>
             <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl font-serif font-bold text-white mb-6">
               Our Services
             </motion.h1>

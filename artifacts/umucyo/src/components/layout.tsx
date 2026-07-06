@@ -1,7 +1,8 @@
 import { Link, useLocation } from "wouter";
-import { Leaf, Menu, X, ArrowRight, MapPin, Mail, Phone } from "lucide-react";
+import { Menu, X, ArrowRight, MapPin, Mail, Phone } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
+import logo from "@/assets/logo.webp";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,13 +42,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
       >
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-3 z-50">
-              <div className={`p-2 rounded-full ${isScrolled ? 'bg-primary text-white' : 'bg-white text-primary'}`}>
-                <Leaf size={24} />
+            <Link href="/" className="flex items-center z-50">
+              <div className="bg-white rounded-lg px-3 py-1.5 shadow-sm">
+                <img src={logo} alt="Umucyo Women Cooperative" className="h-9 w-auto" />
               </div>
-              <span className={`font-serif font-bold text-2xl tracking-tight ${isScrolled ? 'text-primary' : 'text-white'}`}>
-                Umucyo
-              </span>
             </Link>
 
             {/* Desktop Nav */}
@@ -114,11 +112,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 lg:col-span-2">
-              <Link href="/" className="flex items-center gap-3 mb-6">
-                <div className="p-2 rounded-full bg-white text-primary">
-                  <Leaf size={24} />
+              <Link href="/" className="inline-flex items-center mb-6">
+                <div className="bg-white rounded-lg px-4 py-2">
+                  <img src={logo} alt="Umucyo Women Cooperative" className="h-12 w-auto" />
                 </div>
-                <span className="font-serif font-bold text-3xl">Umucyo</span>
               </Link>
               <p className="text-white/80 max-w-md text-lg mb-8 font-serif italic">
                 Empowering women, cultivating excellence, and fostering sustainable growth in Rwanda's coffee and horticulture sectors.

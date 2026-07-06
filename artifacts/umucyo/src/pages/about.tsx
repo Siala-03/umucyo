@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import coopImg from "@/assets/coop-meeting.png";
-import womenImg from "@/assets/women-farmers.png";
+import coopImg from "@/assets/coop-meeting.webp";
+import womenImg from "@/assets/women-farmers.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -139,88 +139,6 @@ export default function About() {
                 </div>
                 <h4 className="text-xl font-bold text-primary mb-3">{value.title}</h4>
                 <p className="text-muted-foreground">{value.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Team */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Leadership</h2>
-            <h3 className="text-4xl font-serif font-bold text-primary mb-4">The people driving our mission.</h3>
-            <p className="text-muted-foreground text-lg">
-              Umucyo is governed by women who have lived the challenges of Rwandan smallholder farming — and built the skills to transform it.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                name: "Marie-Claire Uwimana",
-                title: "Chairperson",
-                bio: "A pioneer in Rwanda's women-led cooperative movement with over 15 years in coffee agribusiness and cooperative governance.",
-                initials: "MCU",
-              },
-              {
-                name: "Josephine Mukamana",
-                title: "Vice Chairperson & Head of Production",
-                bio: "Leading quality standards across the coffee value chain — from good agricultural practices to export-grade processing.",
-                initials: "JM",
-              },
-              {
-                name: "Annonciata Ingabire",
-                title: "Secretary General",
-                bio: "Responsible for cooperative governance, member relations, and compliance with national cooperative regulations.",
-                initials: "AI",
-              },
-              {
-                name: "Dancille Nyiraneza",
-                title: "Treasurer & Finance Lead",
-                bio: "Overseeing financial management, member savings mobilization, and cooperative investment planning.",
-                initials: "DN",
-              },
-              {
-                name: "Pélagie Uwineza",
-                title: "Head of Horticulture",
-                bio: "Managing horticulture value chains, market linkages, and sustainable crop production across member farms.",
-                initials: "PU",
-              },
-              {
-                name: "Clarisse Mutoni",
-                title: "Training & Capacity Building Lead",
-                bio: "Designing and delivering farmer training programs in agronomy, financial literacy, and climate-smart agriculture.",
-                initials: "CM",
-              },
-              {
-                name: "Vestine Umuhoza",
-                title: "Market Linkages & Export Officer",
-                bio: "Building relationships with domestic and international buyers, facilitating trade connections and export compliance.",
-                initials: "VU",
-              },
-              {
-                name: "Olive Ishimwe",
-                title: "Youth & Women's Empowerment Officer",
-                bio: "Coordinating youth employment programs, skills development initiatives, and women's economic inclusion activities.",
-                initials: "OI",
-              },
-            ].map((person, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.07 }}
-                className="group flex flex-col"
-                data-testid={`card-leader-${i}`}
-              >
-                <div className="w-full aspect-square rounded-2xl bg-primary/10 flex items-center justify-center mb-5 overflow-hidden group-hover:bg-primary/20 transition-colors">
-                  <span className="font-serif font-bold text-4xl text-primary">{person.initials}</span>
-                </div>
-                <h4 className="font-bold text-lg text-primary">{person.name}</h4>
-                <p className="text-secondary text-sm font-semibold mb-2">{person.title}</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">{person.bio}</p>
               </motion.div>
             ))}
           </div>

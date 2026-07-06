@@ -6,8 +6,8 @@ import {
   Users, Leaf, TrendingUp, Globe2, Heart, BookOpen,
   ShieldCheck, Sun, ArrowRight, CheckCircle2, Target
 } from "lucide-react";
-import womenImg from "@/assets/women-farmers.png";
-import rwandaImg from "@/assets/rwanda-landscape.png";
+import womenImg from "@/assets/women-farmers.webp";
+import rwandaImg from "@/assets/rwanda-landscape.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },

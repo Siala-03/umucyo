@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, TrendingUp, Users, Globe2 } from "lucide-react";
 
-import heroImg from "@/assets/hero-coffee.png";
-import womenImg from "@/assets/women-farmers.png";
-import rwandaImg from "@/assets/rwanda-landscape.png";
+import heroImg from "@/assets/hero-coffee.webp";
+import womenImg from "@/assets/women-farmers.webp";
+import rwandaImg from "@/assets/rwanda-landscape.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
