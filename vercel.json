@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "buildCommand": "pnpm -C artifacts/umucyo build",
+  "installCommand": "pnpm install",
+  "outputDirectory": "artifacts/umucyo/dist"
+}
