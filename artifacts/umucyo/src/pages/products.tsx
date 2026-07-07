@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import {
   ArrowRight, CheckCircle2, Package, Thermometer, Droplets,
-  Mountain, Calendar, Award, FlaskConical, Leaf, Star
+  Mountain, Calendar
 } from "lucide-react";
 import coffeeImg from "@/assets/hero-coffee.webp";
 import processingImg from "@/assets/coffee-processing.webp";
@@ -47,33 +47,6 @@ const harvestCalendar = [
   { month: "Oct", activity: "Fly crop development", level: 2 },
   { month: "Nov", activity: "Fly crop cherry ripening", level: 3 },
   { month: "Dec", activity: "Fly crop harvest begins", level: 3 },
-];
-
-const certifications = [
-  {
-    icon: Award,
-    title: "Export License",
-    body: "NAEB-registered and licensed coffee exporter compliant with Rwanda's national export regulations.",
-    status: "Active"
-  },
-  {
-    icon: Leaf,
-    title: "Organic (In Progress)",
-    body: "Currently undertaking the transition to full organic certification for our coffee and horticulture operations.",
-    status: "In Progress"
-  },
-  {
-    icon: Star,
-    title: "Fair Trade (Seeking)",
-    body: "Actively pursuing Fair Trade certification to guarantee fair prices and ethical sourcing for international buyers.",
-    status: "Seeking"
-  },
-  {
-    icon: FlaskConical,
-    title: "Quality Traceability",
-    body: "Full lot-level traceability from individual farmer to export shipment, with documented cup profiles per lot.",
-    status: "Active"
-  },
 ];
 
 const hortProducts = [
@@ -256,51 +229,6 @@ export default function Products() {
             <div className="flex items-center gap-2"><div className="w-4 h-4 rounded-full bg-secondary" /><span className="text-sm text-muted-foreground">Peak harvest</span></div>
             <div className="flex items-center gap-2"><div className="w-4 h-4 rounded-full bg-primary/50" /><span className="text-sm text-muted-foreground">Active season</span></div>
             <div className="flex items-center gap-2"><div className="w-4 h-4 rounded-full bg-muted" /><span className="text-sm text-muted-foreground">Off season</span></div>
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications */}
-      <section className="py-24 bg-primary text-white">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Standards & Compliance</h2>
-            <h3 className="text-4xl lg:text-5xl font-serif font-bold text-white mb-4">
-              Certifications & Quality Standards
-            </h3>
-            <p className="text-white/80 text-lg">
-              We are committed to meeting and exceeding international standards for our buyers and development partners.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {certifications.map((cert, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-white/5 border border-white/10 rounded-2xl p-8 flex gap-5"
-                data-testid={`card-cert-${i}`}
-              >
-                <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center shrink-0">
-                  <cert.icon className="w-6 h-6 text-secondary" />
-                </div>
-                <div>
-                  <div className="flex items-center gap-3 mb-2">
-                    <h4 className="font-bold text-white text-lg">{cert.title}</h4>
-                    <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${
-                      cert.status === "Active" ? "bg-green-500/20 text-green-300" :
-                      cert.status === "In Progress" ? "bg-amber-500/20 text-amber-300" :
-                      "bg-blue-500/20 text-blue-300"
-                    }`}>
-                      {cert.status}
-                    </span>
-                  </div>
-                  <p className="text-white/70 text-sm leading-relaxed">{cert.body}</p>
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>

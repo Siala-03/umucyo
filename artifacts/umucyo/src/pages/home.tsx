@@ -37,11 +37,6 @@ export default function Home() {
             initial="hidden" animate="visible" variants={staggerContainer}
             className="max-w-4xl"
           >
-            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
-              <span className="w-2 h-2 rounded-full bg-secondary"></span>
-              <span className="text-sm font-semibold tracking-wide text-white">Rwanda's Premium Cooperative</span>
-            </motion.div>
-            
             <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold leading-[1.1] mb-8 text-white">
               Cultivating Quality.<br />
               <span className="text-secondary italic">Empowering Women.</span>
