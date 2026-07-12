@@ -61,7 +61,7 @@ export default function About() {
                   Starting with a core group of dedicated farmers, we built a structure that guarantees <strong>90% women composition</strong> across all levels of the cooperative. This isn't just a statistic—it's our fundamental operational philosophy.
                 </p>
                 <p>
-                  By pooling our resources, sharing knowledge, and committing to uncompromised quality in Arabica coffee and horticulture, Umucyo has rapidly grown into a trusted partner for international buyers and development organizations alike.
+                  By pooling our resources, sharing knowledge, and committing to uncompromised quality in Arabica coffee and horticulture, Umucyo has rapidly grown into a trusted producer partner for exporters, international buyers, and development organizations alike — creating dignified jobs and income for women and youth across our communities.
                 </p>
               </div>
             </motion.div>
@@ -161,7 +161,7 @@ export default function About() {
                 { value: "90%", label: "Women in leadership & membership" },
                 { value: "Annual", label: "General Assembly for all members" },
                 { value: "Elected", label: "Board accountable to members" },
-                { value: "NAEB", label: "Registered & regulated exporter" },
+                { value: "NAEB", label: "Registered cooperative, affiliated exporter partners" },
               ].map((item, i) => (
                 <motion.div
                   key={i}

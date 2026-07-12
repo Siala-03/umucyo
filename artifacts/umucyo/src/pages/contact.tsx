@@ -41,7 +41,7 @@ const formSchema = z.object({
 });
 
 const inquiryCategories = [
-  { value: "Coffee sourcing & exports", label: "Coffee Sourcing & Exports" },
+  { value: "Coffee sourcing & supply partnerships", label: "Coffee Sourcing & Supply Partnerships" },
   { value: "Horticultural products", label: "Horticultural Products" },
   { value: "Partnerships & collaboration", label: "Partnerships & Collaboration" },
   { value: "Funding & investment", label: "Funding & Investment Opportunities" },
@@ -209,7 +209,7 @@ export default function Contact() {
                   <h4 className="font-bold text-sm text-secondary uppercase tracking-wide mb-4">We Welcome Inquiries About</h4>
                   <div className="space-y-2">
                     {[
-                      "Coffee sourcing and exports",
+                      "Coffee sourcing and supply partnerships",
                       "Horticultural products",
                       "Partnerships and collaboration",
                       "Women's empowerment initiatives",
@@ -364,15 +364,15 @@ export default function Contact() {
               },
               {
                 q: "Are you certified Organic or Fair Trade?",
-                a: "We currently hold an active NAEB export license and operate under full quality traceability. We are actively pursuing Organic and Fair Trade certifications. Buyers with specific certification requirements are encouraged to contact us to discuss timing and transitional supply arrangements.",
+                a: "We are a NAEB-registered cooperative operating under full quality traceability, and we work with licensed export partners for international shipments. We are actively pursuing Organic and Fair Trade certifications. Buyers with specific certification requirements are encouraged to contact us to discuss timing and transitional supply arrangements.",
               },
               {
                 q: "What coffee processing methods do you use?",
-                a: "We produce both Fully Washed (bright, clean acidity) and Natural/Dry Process (fruited, complex body) coffees. Both are available as green (unroasted) export lots. We can also arrange small-batch roasted coffee for select markets.",
+                a: "We produce both Fully Washed (bright, clean acidity) and Natural/Dry Process (fruited, complex body) coffees. Both are available as green (unroasted) lots. We can also arrange small-batch roasted coffee for select markets.",
               },
               {
-                q: "What export terms do you offer?",
-                a: "We offer FOB (Free On Board) Kigali as our standard export term. CIF and other Incoterms can be negotiated for established buyer relationships. Please contact our trade team to discuss your preferred logistics arrangement.",
+                q: "How does sourcing and export work with Umucyo?",
+                a: "Umucyo grows, processes, and supplies premium coffee and horticulture. Export logistics — FOB/CIF terms, customs, and shipping — are handled together with our licensed NAEB export partners. Contact us and we'll connect you with the right partner for your logistics needs.",
               },
               {
                 q: "How can development organizations partner with you?",
@@ -387,8 +387,8 @@ export default function Contact() {
                 a: "Yes. Qualified buyers, development partners, and researchers are welcome to arrange farm and washing station visits. We work with NAEB and our institutional partners to facilitate visits. Please contact us at least 3 weeks in advance.",
               },
               {
-                q: "What horticultural products are available for export?",
-                a: "Our primary export horticulture crops include French beans, courgettes/zucchini, chili peppers, passion fruit, and avocado (Hass). Availability varies by season. Please contact us with your specific requirements and we will provide current supply information.",
+                q: "What horticultural products do you produce?",
+                a: "Our primary export-grade horticulture crops include French beans, courgettes/zucchini, chili peppers, passion fruit, and avocado (Hass). Availability varies by season. Please contact us with your specific requirements and we will provide current supply information.",
               },
             ].map((faq, i) => (
               <motion.div
@@ -450,7 +450,7 @@ export default function Contact() {
             <div>
               <h2 className="text-4xl font-serif font-bold mb-4">Ready to start a conversation?</h2>
               <p className="text-white/80 text-lg mb-8">
-                We look forward to hearing from you — whether you are sourcing Rwandan coffee, exploring a partnership, or seeking to invest in women's agricultural leadership.
+                We look forward to hearing from you — whether you are an exporter or buyer sourcing Rwandan coffee, exploring a partnership, or seeking to invest in women's and youth's agricultural leadership.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="mailto:uwomencooperative@gmail.com" className="inline-flex items-center gap-2 bg-secondary text-primary font-semibold px-6 py-3 rounded-full hover:bg-white transition-colors">

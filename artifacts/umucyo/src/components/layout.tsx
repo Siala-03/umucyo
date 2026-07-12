@@ -118,7 +118,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </Link>
               <p className="text-white/80 max-w-md text-lg mb-8 font-serif italic">
-                Empowering women, cultivating excellence, and fostering sustainable growth in Rwanda's coffee and horticulture sectors.
+                Empowering women and youth with dignified jobs and income, cultivating excellence, and building sustainable livelihoods in Rwanda's coffee and horticulture value chain.
               </p>
             </div>
             

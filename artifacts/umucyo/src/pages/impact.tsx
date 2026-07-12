@@ -123,7 +123,7 @@ const impactAreas = [
     metric: 5,
     suffix: "+",
     label: "Export Markets",
-    desc: "Countries reached through our premium Arabica coffee and horticultural exports."
+    desc: "Countries our premium Arabica coffee and horticulture reach, through partnerships with licensed exporters."
   },
   {
     icon: Heart,
@@ -153,7 +153,7 @@ const fundingEnables = [
   {
     icon: Globe2,
     title: "Market Access & Trade Facilitation",
-    desc: "Participation in international trade fairs, export logistics, and buyer relationship development."
+    desc: "Participation in international trade fairs and buyer relationship development, alongside our licensed export partners."
   },
   {
     icon: Target,

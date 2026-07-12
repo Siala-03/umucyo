@@ -66,7 +66,7 @@ export default function Home() {
               { label: "Women Leadership", value: "90%", icon: Users },
               { label: "Established", value: "2022", icon: TrendingUp },
               { label: "Core Sectors", value: "Coffee & Agri", icon: CheckCircle2 },
-              { label: "Global Reach", value: "Export Ready", icon: Globe2 },
+              { label: "Women & Youth Impacted", value: "1,000+", icon: Globe2 },
             ].map((stat, i) => (
               <motion.div 
                 key={i}
@@ -264,7 +264,7 @@ export default function Home() {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { label: "For Buyers & Exporters", title: "Source Premium Rwandan Coffee", desc: "View product specs, harvest calendars, and trade terms.", href: "/products", cta: "View Products" },
+              { label: "For Buyers & Exporters", title: "Discover Our Coffee & Produce", desc: "View product specs, harvest calendars, and how to source through our export partners.", href: "/products", cta: "View Products" },
               { label: "For Donors & Partners", title: "See Our Impact", desc: "Explore SDG alignment, impact metrics, and funding opportunities.", href: "/impact", cta: "Our Impact" },
               { label: "For Government", title: "Partner With Us", desc: "Learn how we align with Rwanda's NST1, Vision 2050, and PSTA4.", href: "/impact", cta: "Learn More" },
             ].map((card, i) => (

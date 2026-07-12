@@ -31,7 +31,7 @@ const coffeeSpecs = [
   { label: "Flavor Notes", value: "Citrus, red berry, floral, caramel" },
   { label: "Minimum Order", value: "1 x 60kg bag (samples available)" },
   { label: "Packaging", value: "60 kg jute bags / GrainPro lined" },
-  { label: "Export Terms", value: "FOB Kigali / CIF negotiable" },
+  { label: "Market Access", value: "Delivered via our NAEB-licensed export partners" },
 ];
 
 const harvestCalendar = [
@@ -89,7 +89,7 @@ export default function Products() {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-12 px-8 rounded-full border-white/40 text-white hover:bg-white hover:text-primary transition-colors">
-                <Link href="/contact">Trade Inquiry</Link>
+                <Link href="/contact">Sourcing Inquiry</Link>
               </Button>
             </motion.div>
           </motion.div>
@@ -299,17 +299,17 @@ export default function Products() {
               <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2" />
             </div>
             <div className="relative z-10">
-              <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Start Trading</h2>
+              <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Work With Our Cooperative</h2>
               <h3 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-                Ready to source from Rwanda?
+                Ready to source premium Rwandan produce?
               </h3>
               <p className="text-white/80 text-lg max-w-2xl mx-auto mb-10">
-                Contact our trade team to discuss volumes, pricing, delivery timelines, and sample requests. We work with importers, roasters, wholesalers, and retail buyers worldwide.
+                Contact our team to discuss volumes, quality specifications, and sample requests. We work alongside NAEB-licensed exporters and trade partners to connect importers, roasters, wholesalers, and retail buyers worldwide with produce grown by our women and youth members.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button asChild size="lg" className="h-14 px-10 rounded-full bg-secondary text-primary hover:bg-white text-lg font-semibold">
-                  <a href="mailto:uwomencooperative@gmail.com?subject=Trade Inquiry — Umucyo Cooperative">
-                    Contact Our Trade Team
+                  <a href="mailto:uwomencooperative@gmail.com?subject=Sourcing Inquiry — Umucyo Cooperative">
+                    Contact Our Team
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="h-14 px-10 rounded-full border-white/40 text-white hover:bg-white hover:text-primary text-lg transition-colors">

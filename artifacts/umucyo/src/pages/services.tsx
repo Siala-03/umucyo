@@ -54,7 +54,7 @@ export default function Services() {
             {[
               { value: "7", label: "Core Service Areas" },
               { value: "30+", label: "Training Programs Annually" },
-              { value: "5+", label: "Export Markets Served" },
+              { value: "90%", label: "Women-Led Workforce" },
               { value: "250+", label: "Farmers Supported" },
             ].map((s, i) => (
               <motion.div
@@ -409,24 +409,24 @@ export default function Services() {
                 <span className="text-sm font-bold tracking-widest text-secondary uppercase">Service 07</span>
               </motion.div>
               <motion.h2 variants={fadeUp} className="text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
-                Market Linkages & Export Facilitation
+                Market Linkages & Partner Connections
               </motion.h2>
               <motion.p variants={fadeUp} className="text-lg text-white/80 mb-6 leading-relaxed">
-                Access to profitable, stable markets is the critical final step in value chain development. Umucyo actively connects member farmers with verified domestic and international buyers — ensuring that quality produce finds the buyers who will pay fair prices for it.
+                Access to profitable, stable markets is the critical final step in value chain development. Rather than compete with the exporters who move Rwandan produce to the world, Umucyo works alongside them — as a trusted producer partner connecting our member farmers' quality produce to buyers who pay fair prices.
               </motion.p>
               <motion.p variants={fadeUp} className="text-lg text-white/80 mb-8 leading-relaxed">
-                Our market linkage services include export compliance, contract negotiation support, quality documentation, and long-term buyer relationship management. We participate in international trade fairs and agribusiness forums to build Umucyo's visibility as a reliable supply partner.
+                Our market linkage services include quality documentation, buyer introductions through our licensed export partners, and long-term relationship management — so that every sale translates into stable income and dignified work for the women and youth who grow it.
               </motion.p>
               <motion.div variants={stagger} className="space-y-3 mb-10">
                 {[
-                  "NAEB export license and full regulatory compliance",
-                  "International buyer identification and qualification",
-                  "Contract facilitation and supply agreement negotiation",
-                  "Quality documentation, phytosanitary certificates, and COOs",
-                  "Export logistics coordination: FOB, CIF, and DDP terms",
+                  "Full compliance with cooperative law and food-safety standards",
+                  "Buyer identification and qualification alongside our NAEB-licensed export partners",
+                  "Supply agreements with exporters and trade partners for member produce",
+                  "Quality documentation and traceability records supporting our partners' export certifications",
                   "Domestic supermarket and hospitality sector linkages",
                   "Participation in trade fairs and buyer showcases",
                   "Long-term commercial partnership development",
+                  "Stable income and employment pathways for women and youth through consistent market access",
                 ].map((item, i) => (
                   <motion.div key={i} variants={fadeUp} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
@@ -439,7 +439,7 @@ export default function Services() {
                   <Link href="/products">View Our Products</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-full border-white/30 text-white hover:bg-white hover:text-primary h-12 px-8 transition-colors">
-                  <Link href="/contact">Start a Trade Inquiry</Link>
+                  <Link href="/contact">Start a Conversation</Link>
                 </Button>
               </motion.div>
             </motion.div>
@@ -451,10 +451,10 @@ export default function Services() {
               className="grid grid-cols-2 gap-4"
             >
               {[
-                { label: "Countries Reached", value: "5+", sub: "Export markets for coffee" },
-                { label: "Export Ready", value: "NAEB", sub: "Licensed & regulated exporter" },
+                { label: "Countries Reached", value: "5+", sub: "Markets reached via our export partners" },
+                { label: "Cooperative Status", value: "NAEB", sub: "Registered cooperative & affiliate" },
                 { label: "Market Types", value: "Local & Intl", sub: "Domestic, regional, and global" },
-                { label: "Supply Terms", value: "FOB / CIF", sub: "Flexible Incoterms for buyers" },
+                { label: "Supply Model", value: "Via Partners", sub: "Sold through licensed exporters" },
                 { label: "MOQ", value: "1 Bag", sub: "Minimum 60kg, samples available" },
                 { label: "Buyer Types", value: "All", sub: "Roasters, importers, retailers" },
               ].map((stat, i) => (
@@ -526,7 +526,7 @@ export default function Services() {
                   Ready to source premium Rwandan produce?
                 </h3>
                 <p className="text-white/80 text-lg mb-8 leading-relaxed">
-                  Whether you are an international buyer, a development organization, or a government institution — we have services designed to create value for you and our farmer members.
+                  Whether you are an exporter, an international buyer, a development organization, or a government institution — we have services designed to create value for you while creating dignified jobs and income for our women and youth members.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button asChild size="lg" className="rounded-full bg-secondary text-primary hover:bg-white h-12 px-8 font-semibold">
