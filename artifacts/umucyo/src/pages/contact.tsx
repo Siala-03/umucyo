@@ -157,6 +157,45 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* How We Can Work Together */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Partnership Pathways</h2>
+            <h3 className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">
+              How we can work together.
+            </h3>
+            <p className="text-muted-foreground text-lg">
+              Creating inclusive and resilient agricultural value chains requires more than good intentions — it requires collaboration.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              { icon: Coffee, title: "Agricultural Exporters & Processors", desc: "Access organized, trained workforce support that contributes to quality, efficiency, and responsible employment practices across agricultural value chains." },
+              { icon: Users, title: "Government Institutions", desc: "Collaborate on initiatives that advance national priorities in employment creation, women's economic empowerment, agricultural transformation, and rural development." },
+              { icon: Globe2, title: "Development Partners & NGOs", desc: "Co-design programmes that strengthen livelihoods, expand workforce opportunities, build technical capacity, and promote inclusive agricultural growth." },
+              { icon: TrendingUp, title: "Donors & Foundations", desc: "Invest in a locally led model that creates measurable social, economic, and environmental impact through decent work, skills development, and community resilience." },
+              { icon: Leaf, title: "Corporate Sustainability Partners", desc: "Support inclusive supply chains and ESG commitments by investing in workforce development, gender equality, and sustainable agricultural communities." },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="bg-card border border-border rounded-2xl p-6"
+              >
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <item.icon className="w-5 h-5 text-primary" />
+                </div>
+                <h4 className="font-bold text-foreground mb-2">{item.title}</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Info + Form */}
       <section className="py-24" id="contact-form">
         <div className="container mx-auto px-6 lg:px-12">
@@ -441,6 +480,18 @@ export default function Contact() {
                 <p className="text-muted-foreground text-sm leading-relaxed">{stage.desc}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Together We Create Lasting Impact */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Together</h2>
+            <p className="font-serif italic text-2xl text-primary leading-relaxed">
+              Every partnership creates new opportunities. Every opportunity strengthens a family. Every strengthened family contributes to a more resilient community.
+            </p>
           </div>
         </div>
       </section>
