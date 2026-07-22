@@ -30,13 +30,13 @@ export default function About() {
           >
             Our Story
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-white/90 max-w-2xl mx-auto font-light"
           >
-            A collective vision to transform Rwanda's agricultural landscape through women's leadership.
+            Some organizations begin with an idea. Umucyo began with a problem: the women who sustain Rwanda's agriculture deserved more than appreciation — they deserved opportunity.
           </motion.p>
         </div>
       </section>
@@ -52,16 +52,19 @@ export default function About() {
               variants={fadeUp}
             >
               <h2 className="text-secondary font-bold tracking-widest uppercase mb-4 text-sm">Origins</h2>
-              <h3 className="text-4xl font-serif font-bold text-primary mb-6">Founded in 2022 with a powerful purpose.</h3>
+              <h3 className="text-4xl font-serif font-bold text-primary mb-6">Founded in 2022, named for the light of opportunity.</h3>
               <div className="prose prose-lg text-muted-foreground">
                 <p>
-                  Umucyo Women Cooperative emerged from a shared ambition among female farmers in Rwanda to not just participate in the agricultural sector, but to lead it. We recognized that while women form the backbone of agricultural labor, they are often underrepresented in ownership, decision-making, and value addition.
+                  Across coffee-growing communities and horticultural landscapes, women were already doing essential work — sorting coffee with remarkable precision, cultivating crops that supported household incomes, and keeping agricultural value chains moving every season. Yet for many, this work remained informal, inconsistent, and undervalued. The challenge was never a lack of skill or commitment. It was the absence of structured pathways that could turn essential agricultural work into stable employment and long-term opportunity.
                 </p>
                 <p>
-                  Starting with a core group of dedicated farmers, we built a structure that guarantees <strong>90% women composition</strong> across all levels of the cooperative. This isn't just a statistic—it's our fundamental operational philosophy.
+                  Recognizing this gap, a group of women came together in 2022 with a shared vision: to build a cooperative that would place women at the centre of agricultural development — not as beneficiaries of support, but as skilled professionals, leaders, and contributors to Rwanda's growing agricultural economy. That vision became Umucyo Women Cooperative. The name <em>Umucyo</em>, meaning "light" in Kinyarwanda, reflects more than optimism — it represents opportunity, dignity, and the belief that sustainable development begins when people are equipped to build better futures for themselves.
                 </p>
                 <p>
-                  By pooling our resources, sharing knowledge, and committing to uncompromised quality in Arabica coffee and horticulture, Umucyo has rapidly grown into a trusted producer partner for exporters, international buyers, and development organizations alike — creating dignified jobs and income for women and youth across our communities.
+                  From the beginning, Umucyo chose a different path. Rather than becoming another agricultural producer, processor, or exporter, we positioned the cooperative as a <strong>workforce and livelihoods partner</strong> — an organization that strengthens existing agricultural value chains by investing in the people who sustain them. We do not compete with coffee exporters. We do not replace cooperatives or washing stations. We do not market agricultural commodities. Instead, we organize, train, and coordinate skilled women who contribute to quality, productivity, and responsible employment across the value chain.
+                </p>
+                <p>
+                  Today, Umucyo is a cooperative of more than <strong>2,000 women</strong>, with approximately <strong>90% of its membership</strong> made up of women from across Rwanda's agricultural communities. This isn't just a statistic — it's our fundamental operational philosophy.
                 </p>
               </div>
             </motion.div>
@@ -90,7 +93,7 @@ export default function About() {
             >
               <h3 className="text-3xl font-serif font-bold mb-6 text-secondary">Our Mission</h3>
               <p className="text-lg leading-relaxed text-white/80">
-                To empower women farmers in Rwanda by enhancing their capacity in premium coffee and horticulture production, facilitating value addition, and creating direct linkages to profitable markets, thereby improving livelihoods and community resilience.
+                To create decent, dignified employment for women and youth across Rwanda's agricultural value chains — coffee, horticulture, and beyond — while investing in the skills, leadership, and environmental stewardship that make those livelihoods last.
               </p>
             </motion.div>
             <motion.div 
@@ -102,7 +105,7 @@ export default function About() {
             >
               <h3 className="text-3xl font-serif font-bold mb-6 text-secondary">Our Vision</h3>
               <p className="text-lg leading-relaxed text-white/80">
-                To be the leading women-driven agricultural cooperative in East Africa, recognized globally for the exceptional quality of our produce, our commitment to sustainable farming, and our profound socio-economic impact.
+                A Rwanda where every woman and young person in agriculture has a dignified job, a fair wage, and a direct stake in the health of the land — with 10,000 women and youth in decent agricultural employment by 2030.
               </p>
             </motion.div>
           </div>
@@ -120,10 +123,10 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { title: "Empowerment", desc: "We believe in the transformative power of women's leadership in agriculture." },
-              { title: "Excellence", desc: "We compromise on nothing when it comes to the quality of our coffee and crops." },
-              { title: "Sustainability", desc: "We farm with the future in mind, protecting Rwanda's fertile environment." },
-              { title: "Integrity", desc: "We operate with total transparency toward our members, partners, and buyers." },
-              { title: "Innovation", desc: "We continuously adopt modern, climate-smart agricultural technologies." },
+              { title: "Excellence", desc: "We compromise on nothing when it comes to the quality and professionalism of our workforce." },
+              { title: "Stewardship", desc: "We treat the women who protect our soil, water, and forests as skilled professionals — and work to see them paid accordingly." },
+              { title: "Integrity", desc: "We operate with total transparency toward our members, partners, and the businesses we work alongside." },
+              { title: "Climate Resilience", desc: "We build agroforestry and climate-smart practices into every value chain we touch." },
               { title: "Community", desc: "Our success is measured by the prosperity we bring to our local communities." },
             ].map((value, i) => (
               <motion.div
@@ -161,7 +164,7 @@ export default function About() {
                 { value: "90%", label: "Women in leadership & membership" },
                 { value: "Annual", label: "General Assembly for all members" },
                 { value: "Elected", label: "Board accountable to members" },
-                { value: "NAEB", label: "Registered cooperative, affiliated exporter partners" },
+                { value: "2,000+", label: "Women members across Rwanda" },
               ].map((item, i) => (
                 <motion.div
                   key={i}

@@ -55,115 +55,93 @@ const sdgs = [
     number: "SDG 1",
     title: "No Poverty",
     color: "bg-red-600",
-    desc: "Increasing incomes and financial inclusion for smallholder women farmers and their families."
-  },
-  {
-    number: "SDG 2",
-    title: "Zero Hunger",
-    color: "bg-amber-500",
-    desc: "Improving food security through horticulture production and sustainable farming practices."
+    desc: "Decent work is one of the most effective pathways out of poverty — expanding access to structured employment and income for women and their families."
   },
   {
     number: "SDG 5",
     title: "Gender Equality",
     color: "bg-orange-500",
-    desc: "90% women leadership, breaking barriers in agricultural ownership and decision-making."
+    desc: "As a 90% women-led organization, we increase women's participation in the economy and strengthen leadership opportunities."
   },
   {
     number: "SDG 8",
     title: "Decent Work & Growth",
     color: "bg-rose-700",
-    desc: "Creating dignified employment and entrepreneurship for young women and girls."
+    desc: "Creating decent work is our core mission — workforce development and skills training that support inclusive economic growth."
   },
   {
     number: "SDG 13",
     title: "Climate Action",
     color: "bg-green-700",
-    desc: "Climate-smart agriculture, responsible resource management, and environmental stewardship."
+    desc: "Climate-smart agricultural practices and agroforestry that help farming communities adapt to changing environmental conditions."
+  },
+  {
+    number: "SDG 15",
+    title: "Life on Land",
+    color: "bg-emerald-700",
+    desc: "Responsible land stewardship, soil conservation, and sustainable farming practices that protect Rwanda's agricultural ecosystems."
   },
   {
     number: "SDG 17",
     title: "Partnerships",
     color: "bg-blue-700",
-    desc: "Working with government, NGOs, and the private sector to scale sustainable development."
+    desc: "Working alongside agricultural businesses, government, development agencies, and donors to build inclusive value chains."
   },
 ];
 
 const impactAreas = [
   {
     icon: Users,
-    metric: 250,
-    suffix: "+",
-    label: "Women Members",
-    desc: "Active cooperative members, 90% of whom are women leading their households and communities."
-  },
-  {
-    icon: TrendingUp,
-    metric: 40,
-    suffix: "%",
-    label: "Income Growth",
-    desc: "Average increase in member household income since joining the cooperative."
-  },
-  {
-    icon: Leaf,
-    metric: 500,
-    suffix: "+ Ha",
-    label: "Land Under Management",
-    desc: "Hectares of farmland under sustainable, climate-smart agricultural practices."
-  },
-  {
-    icon: BookOpen,
-    metric: 30,
-    suffix: "+",
-    label: "Training Programs",
-    desc: "Annual training sessions covering agronomy, financial literacy, and cooperative governance."
+    label: "Decent Employment",
+    desc: "Our primary mission is creating dignified employment opportunities for women and young people, through organized workforce services and continuous skills development."
   },
   {
     icon: Globe2,
-    metric: 5,
-    suffix: "+",
-    label: "Export Markets",
-    desc: "Countries our premium Arabica coffee and horticulture reach, through partnerships with licensed exporters."
+    label: "Stronger Agricultural Value Chains",
+    desc: "By providing trained workforce support to agricultural businesses, we contribute to quality, efficiency, and responsible employment practices — complementing the work of cooperatives, processors, and exporters."
   },
   {
     icon: Heart,
-    metric: 1000,
-    suffix: "+",
-    label: "Beneficiaries",
-    desc: "Total community members — farmers, youth, and families — whose lives are improving."
+    label: "Women's Economic Empowerment",
+    desc: "Beyond employment, members develop leadership skills, financial confidence, and greater participation in decision-making within their households, communities, and the cooperative itself."
+  },
+  {
+    icon: Leaf,
+    label: "Climate Resilience",
+    desc: "Through climate-smart agriculture, agroforestry, and responsible land management, we encourage farming practices that protect natural resources while supporting long-term productivity."
   },
 ];
 
 const fundingEnables = [
   {
-    icon: Sun,
-    title: "Climate-Smart Farming Equipment",
-    desc: "Solar-powered irrigation systems and greenhouse infrastructure to extend growing seasons and protect yield."
-  },
-  {
     icon: BookOpen,
-    title: "Farmer Training & Capacity Building",
-    desc: "Structured agronomy programs, financial literacy workshops, and leadership development for women and youth."
+    title: "Workforce Training & Capacity Building",
+    desc: "Structured skills programs, financial literacy workshops, and leadership development for women and youth."
   },
   {
-    icon: ShieldCheck,
-    title: "Quality & Certification Attainment",
-    desc: "Investment in lab testing, quality management systems, and international certification processes (Organic, Fair Trade)."
-  },
-  {
-    icon: Globe2,
-    title: "Market Access & Trade Facilitation",
-    desc: "Participation in international trade fairs and buyer relationship development, alongside our licensed export partners."
-  },
-  {
-    icon: Target,
-    title: "Processing Infrastructure",
-    desc: "Coffee washing stations, sorting/grading equipment, roasting capacity, and cold storage for horticulture."
+    icon: Leaf,
+    title: "Environmental Stewardship Incentives",
+    desc: "Piloting a model that rewards women directly for agroforestry, soil conservation, and watershed protection work."
   },
   {
     icon: Users,
-    title: "Youth Employment Programs",
-    desc: "Structured internships, apprenticeships, and skills training for young women entering the agricultural sector."
+    title: "Youth Employment Pathways",
+    desc: "Structured entry pathways and apprenticeships for young women entering agricultural value chains."
+  },
+  {
+    icon: ShieldCheck,
+    title: "Workforce Safety & Equipment",
+    desc: "Protective equipment, tools, and transport that keep sorting and field teams safe and productive."
+  },
+  {
+    icon: Sun,
+    title: "Agroforestry & Climate-Smart Inputs",
+    desc: "Tree seedlings, soil-conservation materials, and water-stewardship tools for member farms."
+  },
+  {
+    icon: TrendingUp,
+    title: "Leadership & Financial Inclusion",
+    desc: "Savings groups, microfinance linkages, and mentorship pathways into cooperative leadership."
   },
 ];
 
@@ -187,13 +165,39 @@ export default function Impact() {
               Our Impact
             </motion.h1>
             <motion.p variants={fadeUp} className="text-xl text-white/90 max-w-2xl mx-auto font-light">
-              Every harvest, every training session, every market connection — a step toward lasting change for women and communities across Rwanda.
+              Every job created, every training session, every tree planted — a step toward lasting change for women and communities across Rwanda.
             </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* Key Metrics */}
+      {/* Where We Are Today */}
+      <section className="py-16 bg-card border-b border-border">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-y-2 md:divide-y-0 md:divide-x divide-border">
+            {[
+              { value: "90%", label: "Women-Led" },
+              { value: "2022", label: "Established" },
+              { value: <AnimatedCounter target={2000} suffix="+" />, label: "Women Employed" },
+              { value: "10,000", label: "Jobs — Our 2030 Vision" },
+            ].map((s, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="pt-8 md:pt-0 md:px-8 first:pl-0 last:pr-0 text-center md:text-left"
+              >
+                <div className="text-4xl font-serif font-bold text-primary mb-1">{s.value}</div>
+                <div className="text-muted-foreground text-sm font-semibold uppercase tracking-wide">{s.label}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Areas */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6 lg:px-12">
           <motion.div
@@ -201,12 +205,12 @@ export default function Impact() {
             variants={stagger}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <motion.h2 variants={fadeUp} className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">By the Numbers</motion.h2>
+            <motion.h2 variants={fadeUp} className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Where Impact Happens</motion.h2>
             <motion.h3 variants={fadeUp} className="text-4xl lg:text-5xl font-serif font-bold text-primary">
-              Impact that speaks for itself.
+              Four interconnected areas of change.
             </motion.h3>
           </motion.div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {impactAreas.map((item, i) => (
               <motion.div
                 key={i}
@@ -219,12 +223,9 @@ export default function Impact() {
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
                   <item.icon className="w-7 h-7 text-primary" />
                 </div>
-                <div className="text-5xl font-serif font-bold text-primary">
-                  <AnimatedCounter target={item.metric} suffix={item.suffix} />
-                </div>
                 <div>
                   <h4 className="font-bold text-lg text-foreground mb-2">{item.label}</h4>
-                  <p className="text-muted-foreground">{item.desc}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -245,17 +246,17 @@ export default function Impact() {
               How sustainable transformation happens.
             </motion.h3>
             <motion.p variants={fadeUp} className="text-white/80 text-lg">
-              Our model creates a self-reinforcing cycle: empowered women drive cooperative growth, which opens markets, which increases incomes, which empowers more women.
+              Our model creates a self-reinforcing cycle: organized, trained women earn decent income, which strengthens households and communities, which deepens the skilled workforce agricultural businesses can rely on.
             </motion.p>
           </motion.div>
 
           <div className="flex flex-col md:flex-row items-start gap-0 max-w-5xl mx-auto">
             {[
-              { step: "01", title: "Organize", desc: "Recruit and formalize women smallholder farmers into a well-governed cooperative structure." },
-              { step: "02", title: "Capacitate", desc: "Train members in modern agronomy, quality management, financial literacy, and leadership." },
-              { step: "03", title: "Add Value", desc: "Process raw produce into premium products — washed coffee, graded horticulture, packaged goods." },
-              { step: "04", title: "Connect Markets", desc: "Link cooperative members to domestic and international buyers who pay fair market prices." },
-              { step: "05", title: "Reinvest", desc: "Channel earnings back into infrastructure, training, and community development programs." },
+              { step: "01", title: "Organize", desc: "Recruit and formalize women into a well-governed, professional cooperative workforce." },
+              { step: "02", title: "Capacitate", desc: "Train members in workplace professionalism, quality standards, financial literacy, and leadership." },
+              { step: "03", title: "Deploy", desc: "Mobilize trained teams to support coffee sorting, horticulture, and agroforestry work." },
+              { step: "04", title: "Reward Fairly", desc: "Members earn decent, formal wages — with environmental stewardship as the next frontier of fair pay." },
+              { step: "05", title: "Reinvest", desc: "Channel earnings back into training, leadership development, and community programs." },
             ].map((stage, i) => (
               <motion.div
                 key={i}

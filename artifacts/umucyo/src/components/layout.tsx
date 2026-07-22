@@ -25,7 +25,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
     { href: "/services", label: "Services" },
-    { href: "/products", label: "Products" },
+    { href: "/our-model", label: "Our Model" },
     { href: "/impact", label: "Our Impact" },
     { href: "/partners", label: "Partners" },
     { href: "/contact", label: "Contact" },
@@ -118,7 +118,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </Link>
               <p className="text-white/80 max-w-md text-lg mb-8 font-serif italic">
-                Empowering women and youth with dignified jobs and income, cultivating excellence, and building sustainable livelihoods in Rwanda's coffee and horticulture value chain.
+                A workforce and livelihoods partner creating decent jobs for women and youth across Rwanda's agricultural value chains — and rewarding the women who protect the land.
               </p>
             </div>
             

@@ -38,12 +38,12 @@ export default function Home() {
             className="max-w-4xl"
           >
             <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold leading-[1.1] mb-8 text-white">
-              Cultivating Quality.<br />
-              <span className="text-secondary italic">Empowering Women.</span>
+              Decent Work.<br />
+              <span className="text-secondary italic">Women Leading the Land.</span>
             </motion.h1>
-            
+
             <motion.p variants={fadeUp} className="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 leading-relaxed font-light">
-              We are a 90% women-led agricultural cooperative driving sustainable growth in premium Arabica coffee and horticulture across Rwanda's fertile highlands.
+              A 90% women-led cooperative creating decent jobs for more than 2,000 women and youth across Rwanda's coffee and horticulture value chains — from the sorting table to the agroforestry plot.
             </motion.p>
             
             <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-6">
@@ -65,8 +65,8 @@ export default function Home() {
             {[
               { label: "Women Leadership", value: "90%", icon: Users },
               { label: "Established", value: "2022", icon: TrendingUp },
-              { label: "Core Sectors", value: "Coffee & Agri", icon: CheckCircle2 },
-              { label: "Women & Youth Impacted", value: "1,000+", icon: Globe2 },
+              { label: "Women Employed", value: "2,000+", icon: CheckCircle2 },
+              { label: "Vision by 2030", value: "10,000 Jobs", icon: Globe2 },
             ].map((stat, i) => (
               <motion.div 
                 key={i}
@@ -97,16 +97,16 @@ export default function Home() {
             >
               <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Our Mission</h2>
               <h3 className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-8 leading-tight">
-                Rooted in Rwandan soil. Driven by sustainable impact.
+                We invest in people, not just crops.
               </h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Umucyo Women Cooperative was founded on the belief that empowering women in agriculture transforms communities. By focusing on premium Arabica coffee and high-value horticulture, we create sustainable livelihoods.
+                Umucyo Women Cooperative was founded on the belief that the women who sort our coffee, tend our fields, and protect our land deserve decent, fairly-paid work — not just appreciation. We organize skilled women into a professional workforce and connect them with meaningful opportunities across agricultural value chains.
               </p>
               <ul className="space-y-4 mb-10">
                 {[
-                  "Promoting climate-smart agricultural practices",
-                  "Facilitating direct market linkages for fair pricing",
-                  "Building capacity through continuous farmer training"
+                  "Creating decent employment in coffee sorting and horticulture",
+                  "Integrating agroforestry and climate-smart practices on member farms",
+                  "Building capacity through continuous training and leadership development"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-secondary shrink-0" />
@@ -147,7 +147,7 @@ export default function Home() {
             >
               <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">What We Do</h2>
               <h3 className="text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight">
-                Excellence across the agricultural value chain.
+                Decent work across the agricultural value chain.
               </h3>
             </motion.div>
             <motion.div
@@ -164,13 +164,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: "Premium Coffee Production",
-                desc: "Cultivating high-quality Arabica with full traceability and good agricultural practices.",
+                title: "Coffee Sorting & Grading",
+                desc: "Skilled women earn steady, fair wages hand-sorting green coffee for quality and grade.",
                 img: heroImg
               },
               {
-                title: "Horticulture Excellence",
-                desc: "Year-round production of fruits and vegetables meeting international standards.",
+                title: "Horticulture Livelihoods",
+                desc: "Members build a second income stream, reducing dependence on a single crop or season.",
                 img: rwandaImg
               }
             ].map((service, i) => (
@@ -217,13 +217,13 @@ export default function Home() {
                 location: "Huye District",
               },
               {
-                quote: "The training on post-harvest handling was transformative. Our coffee quality improved so much that we now attract buyers from Europe who pay premium prices.",
+                quote: "The training on post-harvest handling was transformative. Our sorting quality improved so much that processors now trust our team with their most demanding lots.",
                 name: "Claudine Uwimana",
                 role: "Cooperative Treasurer",
                 location: "Nyamagabe District",
               },
               {
-                quote: "As a young woman, I never imagined leading an agribusiness. Umucyo gave me the skills, the confidence, and the market connections to make it real.",
+                quote: "As a young woman, I never imagined leading a team like this. Umucyo gave me the skills, the confidence, and the professional network to make it real.",
                 name: "Yvette Ingabire",
                 role: "Youth Member & Horticulture Lead",
                 location: "Kigali",
@@ -264,8 +264,8 @@ export default function Home() {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { label: "For Buyers & Exporters", title: "Discover Our Coffee & Produce", desc: "View product specs, harvest calendars, and how to source through our export partners.", href: "/products", cta: "View Products" },
-              { label: "For Donors & Partners", title: "See Our Impact", desc: "Explore SDG alignment, impact metrics, and funding opportunities.", href: "/impact", cta: "Our Impact" },
+              { label: "For Agri-Businesses & Exporters", title: "See How We Create Value", desc: "Discover our workforce model and how we support processors, exporters, and cooperatives.", href: "/our-model", cta: "Our Model" },
+              { label: "For Donors & Partners", title: "See Our Impact", desc: "Explore SDG alignment, impact areas, and funding opportunities.", href: "/impact", cta: "Our Impact" },
               { label: "For Government", title: "Partner With Us", desc: "Learn how we align with Rwanda's NST1, Vision 2050, and PSTA4.", href: "/impact", cta: "Learn More" },
             ].map((card, i) => (
               <motion.div

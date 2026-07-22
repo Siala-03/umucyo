@@ -41,13 +41,15 @@ const formSchema = z.object({
 });
 
 const inquiryCategories = [
-  { value: "Coffee sourcing & supply partnerships", label: "Coffee Sourcing & Supply Partnerships" },
-  { value: "Horticultural products", label: "Horticultural Products" },
+  { value: "Coffee sorting & grading workforce", label: "Coffee Sorting & Grading Workforce" },
+  { value: "Horticulture field workforce", label: "Horticulture Field Workforce" },
   { value: "Partnerships & collaboration", label: "Partnerships & Collaboration" },
+  { value: "Climate action & environmental stewardship", label: "Climate Action & Environmental Stewardship" },
   { value: "Funding & investment", label: "Funding & Investment Opportunities" },
   { value: "Women's empowerment", label: "Women's Empowerment Programs" },
   { value: "Training programs", label: "Training & Capacity Building" },
   { value: "Government & policy", label: "Government & Policy Engagement" },
+  { value: "Corporate sustainability & ESG", label: "Corporate Sustainability & ESG" },
   { value: "Media & communications", label: "Media & Communications" },
   { value: "Other", label: "Other Inquiry" },
 ];
@@ -116,7 +118,7 @@ export default function Contact() {
               Get in Touch
             </motion.h1>
             <motion.p variants={fadeUp} className="text-xl text-white/90 max-w-2xl mx-auto font-light">
-              Whether you are a buyer, donor, government partner, or development organization — we welcome the opportunity to explore how we can work together.
+              Whether you are an agricultural business, donor, government partner, or development organization — we welcome the opportunity to explore how we can work together.
             </motion.p>
           </motion.div>
         </div>
@@ -128,8 +130,8 @@ export default function Contact() {
           <p className="text-center text-sm font-bold tracking-widest text-secondary uppercase mb-8">Who Are You?</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
-              { icon: Coffee, label: "Coffee Buyer" },
-              { icon: Leaf, label: "Produce Buyer" },
+              { icon: Coffee, label: "Agri-Business / Exporter" },
+              { icon: Leaf, label: "Climate / ESG Partner" },
               { icon: TrendingUp, label: "Investor / Donor" },
               { icon: Globe2, label: "Development Partner" },
               { icon: Users, label: "Government" },
@@ -209,12 +211,12 @@ export default function Contact() {
                   <h4 className="font-bold text-sm text-secondary uppercase tracking-wide mb-4">We Welcome Inquiries About</h4>
                   <div className="space-y-2">
                     {[
-                      "Coffee sourcing and supply partnerships",
-                      "Horticultural products",
-                      "Partnerships and collaboration",
+                      "Coffee sorting & grading workforce",
+                      "Horticulture field workforce",
+                      "Climate action & environmental stewardship",
                       "Women's empowerment initiatives",
                       "Training and capacity-building programs",
-                      "Investment and development opportunities",
+                      "Investment, donor & ESG partnerships",
                     ].map((item, i) => (
                       <div key={i} className="flex items-center gap-2">
                         <ArrowRight className="w-3.5 h-3.5 text-secondary shrink-0" />
@@ -359,36 +361,36 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {[
               {
-                q: "What is the minimum order quantity for coffee?",
-                a: "Our minimum order is one 60 kg export bag (one bag). Smaller sample quantities (250g–1kg) are available on request for qualified buyers to evaluate quality before committing to a commercial order.",
+                q: "Do you sell coffee or produce directly?",
+                a: "No. Umucyo does not buy, process, market, or export agricultural commodities — we do not compete with coffee exporters. We organize and train a professional workforce that supports coffee processors, horticultural enterprises, and licensed exporters. If you're sourcing coffee or produce, we can connect you with the businesses our workforce supports.",
               },
               {
-                q: "Are you certified Organic or Fair Trade?",
-                a: "We are a NAEB-registered cooperative operating under full quality traceability, and we work with licensed export partners for international shipments. We are actively pursuing Organic and Fair Trade certifications. Buyers with specific certification requirements are encouraged to contact us to discuss timing and transitional supply arrangements.",
+                q: "How can agricultural businesses engage your workforce?",
+                a: "Processors, horticultural enterprises, and exporters can partner with us for organized, trained teams — including coffee sorting and grading, and horticulture field operations support. Contact us to discuss your labor needs, timelines, and volumes.",
               },
               {
-                q: "What coffee processing methods do you use?",
-                a: "We produce both Fully Washed (bright, clean acidity) and Natural/Dry Process (fruited, complex body) coffees. Both are available as green (unroasted) lots. We can also arrange small-batch roasted coffee for select markets.",
-              },
-              {
-                q: "How does sourcing and export work with Umucyo?",
-                a: "Umucyo grows, processes, and supplies premium coffee and horticulture. Export logistics — FOB/CIF terms, customs, and shipping — are handled together with our licensed NAEB export partners. Contact us and we'll connect you with the right partner for your logistics needs.",
+                q: "Are your workers trained and accountable?",
+                a: "Yes. Members complete structured training in workplace professionalism, quality standards, and occupational safety, with ongoing capacity building — including financial literacy, cooperative leadership, and climate-smart agriculture — throughout their time with the cooperative.",
               },
               {
                 q: "How can development organizations partner with you?",
                 a: "We welcome partnerships with NGOs, foundations, and multilateral agencies for program co-implementation, technical assistance, and grant-funded initiatives. Please use the contact form specifying 'Partnerships & Collaboration' and our team will respond with a meeting proposal.",
               },
               {
-                q: "How do you ensure traceability?",
-                a: "Every lot we produce is documented from the individual farmer plot through harvest, processing, and grading to the export shipment. We maintain GPS-mapped farm records, processing logs, and cup profiles per lot — available to buyers on request.",
+                q: "How do you approach environmental stewardship?",
+                a: "We integrate agroforestry and climate-smart practices into member farms today. We are also actively designing a model to pay women directly for conservation work — planting trees, protecting watersheds, conserving soil. That model is still being built, and we're seeking partners to help shape it.",
               },
               {
-                q: "Do you offer site visits for buyers and partners?",
-                a: "Yes. Qualified buyers, development partners, and researchers are welcome to arrange farm and washing station visits. We work with NAEB and our institutional partners to facilitate visits. Please contact us at least 3 weeks in advance.",
+                q: "Do you offer site visits for partners?",
+                a: "Yes. Qualified agricultural businesses, development partners, and researchers are welcome to arrange visits to see our workforce in action. We work with NAEB and our institutional partners to facilitate visits. Please contact us at least 3 weeks in advance.",
               },
               {
-                q: "What horticultural products do you produce?",
-                a: "Our primary export-grade horticulture crops include French beans, courgettes/zucchini, chili peppers, passion fruit, and avocado (Hass). Availability varies by season. Please contact us with your specific requirements and we will provide current supply information.",
+                q: "How can donors or corporate partners get involved?",
+                a: "Donors, foundations, and corporate sustainability teams can support decent-work program funding, environmental stewardship incentive design, or workforce training and equipment. Use the contact form and specify your area of interest.",
+              },
+              {
+                q: "What value chains do you work in?",
+                a: "Coffee and horticulture today — coffee sorting and grading, and horticulture field operations — with an ambition to extend into other agricultural value chains as our members' skills and opportunities grow.",
               },
             ].map((faq, i) => (
               <motion.div
@@ -418,9 +420,9 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row gap-0 max-w-5xl mx-auto">
             {[
               { step: "01", title: "Acknowledgement", time: "Within 24 hours", desc: "You will receive a confirmation email acknowledging receipt of your inquiry and confirming our team has been notified." },
-              { step: "02", title: "Review & Assignment", time: "Within 48 hours", desc: "Your inquiry is reviewed and assigned to the appropriate team member — trade, partnerships, programs, or leadership." },
+              { step: "02", title: "Review & Assignment", time: "Within 48 hours", desc: "Your inquiry is reviewed and assigned to the appropriate team member — workforce, partnerships, programs, or leadership." },
               { step: "03", title: "Initial Response", time: "Within 48–72 hours", desc: "A team member contacts you by email or phone to discuss your inquiry, ask clarifying questions, and propose next steps." },
-              { step: "04", title: "Next Steps", time: "As agreed", desc: "Depending on your inquiry: sample dispatch, partnership proposal, meeting scheduling, or program information package." },
+              { step: "04", title: "Next Steps", time: "As agreed", desc: "Depending on your inquiry: workforce proposal, partnership discussion, meeting scheduling, or program information package." },
             ].map((stage, i) => (
               <motion.div
                 key={i}
@@ -450,7 +452,7 @@ export default function Contact() {
             <div>
               <h2 className="text-4xl font-serif font-bold mb-4">Ready to start a conversation?</h2>
               <p className="text-white/80 text-lg mb-8">
-                We look forward to hearing from you — whether you are an exporter or buyer sourcing Rwandan coffee, exploring a partnership, or seeking to invest in women's and youth's agricultural leadership.
+                We look forward to hearing from you — whether you need a trained agricultural workforce, are exploring a partnership, or seeking to invest in women's and youth's decent work and land stewardship.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="mailto:uwomencooperative@gmail.com" className="inline-flex items-center gap-2 bg-secondary text-primary font-semibold px-6 py-3 rounded-full hover:bg-white transition-colors">

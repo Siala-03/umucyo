@@ -28,16 +28,15 @@ const partners = [
     acronym: "MINAGRI",
     name: "Ministry of Agriculture and Animal Resources",
     color: "bg-green-700",
-    mandate: "Rwanda's lead ministry for agricultural policy, farmer development, and agricultural sector transformation.",
+    mandate: "Rwanda's lead ministry for agricultural policy, rural employment, and agricultural sector transformation.",
     collaboration: [
       "Policy alignment with Rwanda's Agricultural Transformation Strategy (PSTA4)",
-      "Access to national agricultural extension programs and farmer support initiatives",
+      "Alignment with national priorities on decent rural employment and women's economic participation",
       "Participation in government-led value chain development programs for coffee and horticulture",
-      "Input subsidy programs and improved seed distribution to cooperative members",
-      "Reporting and data sharing on cooperative productivity and farmer income outcomes",
       "Support for cooperative formalization and legal compliance under cooperative law",
+      "Reporting and data sharing on workforce, employment, and livelihood outcomes",
     ],
-    impact: "MINAGRI's support provides Umucyo with the policy framework, institutional backing, and resource access needed to scale our cooperative model and align with national development priorities.",
+    impact: "MINAGRI's support provides Umucyo with the policy framework and institutional backing needed to scale a workforce model that creates decent jobs across the agricultural sector.",
     img: coffeeImg,
   },
   {
@@ -46,14 +45,13 @@ const partners = [
     color: "bg-emerald-700",
     mandate: "Rwanda's technical arm for agricultural research, improved technology development, and extension services delivery.",
     collaboration: [
-      "Access to improved coffee and horticulture varieties developed through RAB's research programs",
-      "Technical advisory and extension officer deployment to cooperative member farms",
-      "Soil health analysis and fertility management recommendations",
-      "Integrated pest and disease management (IPM) technical support",
-      "Climate-smart agriculture technology transfer and field demonstrations",
-      "Quality management systems and post-harvest technology guidance",
+      "Technical curriculum and extension officer support for Umucyo's training programs",
+      "Climate-smart agriculture and agroforestry technique transfer",
+      "Soil health, water stewardship, and land management guidance",
+      "Integrated pest and disease management (IPM) technical training",
+      "Quality standards training for coffee sorting and grading teams",
     ],
-    impact: "RAB's technical partnership is central to Umucyo's productivity improvement agenda — connecting our farmers to the latest agricultural research and providing hands-on advisory that drives yields, quality, and income.",
+    impact: "RAB's technical partnership equips our workforce with the latest agricultural research and hands-on advisory — strengthening the skills members bring to every job.",
     img: hortImg,
   },
   {
@@ -62,14 +60,13 @@ const partners = [
     color: "bg-teal-700",
     mandate: "The ministry responsible for disaster risk reduction, environmental resilience, and climate adaptation in Rwanda.",
     collaboration: [
-      "Climate risk assessment and adaptation planning for cooperative farming areas",
-      "Disaster preparedness training and contingency planning for member farmers",
+      "Climate risk assessment and adaptation training for member communities",
+      "Co-design partner for our environmental stewardship incentive model",
       "Environmental conservation programs including reforestation and soil erosion control",
       "Access to early warning systems for drought, flooding, and climate events",
-      "Community resilience building programs integrated with cooperative operations",
-      "Environmental impact monitoring and sustainable land management protocols",
+      "Community resilience building integrated with our workforce programs",
     ],
-    impact: "In a country where climate variability poses real risks to agricultural livelihoods, MINEMA's partnership ensures Umucyo farmers are prepared, protected, and equipped to adapt — safeguarding member incomes and food security.",
+    impact: "In a country where climate variability poses real risks to agricultural livelihoods, MINEMA's partnership helps ensure our members are prepared, protected, and equipped to adapt — and paves the way toward rewarding their stewardship work.",
     img: rwandaImg,
   },
   {
@@ -78,42 +75,47 @@ const partners = [
     color: "bg-primary",
     mandate: "Rwanda's export promotion and trade facilitation agency for agricultural products, particularly coffee and horticulture.",
     collaboration: [
-      "Export licensing and regulatory compliance for coffee and horticultural produce",
-      "Quality and standards certification aligned with international market requirements",
-      "Market intelligence on export opportunities, buyer networks, and price trends",
-      "Trade fair participation support and international buyer connections",
-      "Export logistics guidance, customs facilitation, and documentation support",
-      "Capacity building on export compliance, phytosanitary standards, and traceability",
+      "Host institution support and institutional backing",
+      "Connections to exporters and processors who need trained sorting and grading teams",
+      "Quality and standards awareness aligned with international market requirements",
+      "Visibility within Rwanda's export ecosystem as a trusted workforce partner",
+      "Capacity building on quality compliance and traceability documentation",
     ],
-    impact: "As our host institution and key regulatory partner, NAEB provides Umucyo with the export infrastructure, market intelligence, and commercial network access essential for connecting our farmers to international premium markets.",
+    impact: "As our host institution, NAEB connects Umucyo's trained workforce to the exporters and processors who need it — without Umucyo ever needing to become an exporter itself.",
     img: meetingImg,
   },
 ];
 
 const partnershipTypes = [
   {
+    icon: Building2,
+    title: "Exporters & Agricultural Businesses",
+    desc: "Coffee processors, horticultural enterprises, and licensed exporters seeking a dependable, organized, and professionally trained workforce for labor-intensive operations.",
+    offers: ["Coffee sorting & grading teams", "Horticulture field operations support", "Seasonal workforce mobilization", "Trained, accountable teams"],
+  },
+  {
+    icon: Shield,
+    title: "Government Institutions",
+    desc: "Ministries and public institutions advancing decent work, women's economic participation, youth employment, and climate resilience as national development priorities.",
+    offers: ["Rural employment strategy alignment", "Women's economic empowerment programs", "Climate & agroforestry collaboration", "Workforce outcome data sharing"],
+  },
+  {
     icon: Globe2,
-    title: "International Development Organizations",
-    desc: "NGOs, foundations, and multilateral agencies looking to co-implement programs on women's empowerment, sustainable agriculture, or climate resilience in Rwanda.",
+    title: "Development Partners",
+    desc: "NGOs, foundations, and multilateral agencies looking to co-implement programs on workforce development, gender equality, or climate resilience in Rwanda.",
     offers: ["Program co-implementation", "Technical assistance partnerships", "Grant-funded project delivery", "Monitoring & evaluation collaboration"],
   },
   {
     icon: TrendingUp,
-    title: "Impact Investors & Donors",
-    desc: "Impact-focused investors and philanthropic donors interested in financing cooperative infrastructure, market access, and member capacity at measurable scale.",
-    offers: ["Blended finance structures", "Social bond investment opportunities", "Outcome-based funding programs", "SDG-aligned capital deployment"],
+    title: "Donors & Foundations",
+    desc: "Impact-focused investors and philanthropic donors interested in financing workforce development, environmental stewardship incentives, and community resilience at scale.",
+    offers: ["Decent-work program co-funding", "Stewardship incentive design", "Outcome-based funding programs", "SDG-aligned capital deployment"],
   },
   {
-    icon: Building2,
-    title: "Buyers & Trading Companies",
-    desc: "Green coffee importers, specialty roasters, wholesale traders, and horticultural distributors seeking reliable supply from ethical, traceable Rwandan sources.",
-    offers: ["Direct sourcing partnerships", "Long-term supply agreements", "Off-take contract arrangements", "Exclusive lot reservations"],
-  },
-  {
-    icon: FlaskConical,
-    title: "Research & Academic Institutions",
-    desc: "Universities, research centers, and think tanks interested in studying women's cooperatives, agricultural value chains, and rural development in East Africa.",
-    offers: ["Field research access", "Data sharing agreements", "Joint publications", "Farmer survey facilitation"],
+    icon: Leaf,
+    title: "Corporate Sustainability & ESG Partners",
+    desc: "Companies seeking to support inclusive workforce development, gender equality, and climate-smart agriculture within their supply chains.",
+    offers: ["Responsible supply chain workforce", "Gender-equality program sponsorship", "Climate-smart agriculture investment", "Shared social & environmental value"],
   },
 ];
 
@@ -157,13 +159,13 @@ export default function Partners() {
                 Umucyo Women Cooperative operates within a carefully cultivated ecosystem of institutional partners. We believe that the most durable agricultural transformation happens when cooperatives, government, research institutions, and markets work in aligned coordination — each bringing what the others cannot.
               </motion.p>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Our partnerships are not symbolic. They translate directly into better seeds, better training, better compliance, and better prices for our member farmers. Every relationship we maintain is chosen for its practical, measurable contribution to the livelihoods of our members.
+                Our partnerships are not symbolic. They translate directly into better training, better compliance, and better-paid work for our members. Every relationship we maintain is chosen for its practical, measurable contribution to the livelihoods of our members.
               </motion.p>
               <motion.div variants={stagger} className="space-y-3">
                 {[
                   "Policy alignment with Rwanda's national agricultural agenda",
                   "Technical support from Rwanda's leading research institution",
-                  "Export facilitation by Rwanda's trade promotion authority",
+                  "Workforce connections to exporters, facilitated by Rwanda's trade promotion authority",
                   "Climate resilience through emergency management collaboration",
                 ].map((item, i) => (
                   <motion.div key={i} variants={fadeUp} className="flex items-start gap-3">
@@ -266,10 +268,10 @@ export default function Partners() {
               Partnership opportunities we are actively seeking.
             </h3>
             <p className="text-white/80 text-lg">
-              Umucyo is open to engagement with organizations that share our commitment to agricultural excellence, women's empowerment, and sustainable development in Rwanda.
+              Umucyo is open to engagement with organizations that share our commitment to decent work, women's empowerment, and environmental stewardship in Rwanda.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {partnershipTypes.map((type, i) => (
               <motion.div
                 key={i}
@@ -310,15 +312,15 @@ export default function Partners() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: Users, title: "250+ Organized Farmers", desc: "A structured, formally registered cooperative with audited governance and an active, engaged membership base." },
-              { icon: Shield, title: "Regulatory Compliance", desc: "NAEB-registered exporter compliant with Rwandan cooperative law, food safety standards, and export regulations." },
-              { icon: Globe2, title: "Export Infrastructure", desc: "Established export documentation, buyer relationships, and compliance systems for international market access." },
-              { icon: Leaf, title: "Sustainable Practices", desc: "Climate-smart agriculture, environmental stewardship, and a commitment to long-term land health." },
-              { icon: BookOpen, title: "Training Capacity", desc: "In-house capability to deliver structured farmer training programs in agronomy, finance, and cooperative management." },
+              { icon: Users, title: "2,000+ Organized Women", desc: "A structured, formally registered cooperative with audited governance and an active, engaged membership base." },
+              { icon: Shield, title: "Regulatory Compliance", desc: "Registered cooperative compliant with Rwandan cooperative law, food safety standards, and workplace safety standards." },
+              { icon: Globe2, title: "Workforce Network", desc: "Established relationships with processors, exporters, and cooperatives that need trained, reliable teams." },
+              { icon: Leaf, title: "Sustainable Practices", desc: "Climate-smart agriculture, agroforestry, and a commitment to long-term land health." },
+              { icon: BookOpen, title: "Training Capacity", desc: "In-house capability to deliver structured workforce training in professionalism, finance, and cooperative management." },
               { icon: Target, title: "Measurable Impact", desc: "A commitment to data collection, outcome measurement, and transparent reporting for accountability." },
-              { icon: TrendingUp, title: "Growth Trajectory", desc: "An active pipeline of production expansion, certification pursuits, and new market development." },
+              { icon: TrendingUp, title: "Growth Trajectory", desc: "An active pipeline toward 10,000 decent jobs by 2030, with expanding training and stewardship programs." },
               { icon: Handshake, title: "Strong Institutional Network", desc: "Embedded relationships with MINAGRI, RAB, MINEMA, and NAEB that facilitate rapid program implementation." },
-              { icon: FlaskConical, title: "Quality Traceability", desc: "Full lot-level traceability from individual farmer to export shipment with documented cup profiles." },
+              { icon: FlaskConical, title: "Quality Traceability", desc: "Full documentation from individual worker to finished lot, supporting our partners' quality and export certifications." },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -352,7 +354,7 @@ export default function Partners() {
                 Interested in partnering with Umucyo?
               </h2>
               <p className="text-white/80 text-lg max-w-2xl mx-auto mb-10">
-                We welcome dialogue with development organizations, government institutions, impact investors, international buyers, and academic researchers. Let us explore how we can create value together for Rwanda's women and communities.
+                We welcome dialogue with agricultural businesses, government institutions, development partners, donors, and corporate sustainability teams. Let us explore how we can create value together for Rwanda's women and communities.
               </p>
               <div className="flex flex-wrap gap-4 justify-center mb-10">
                 <Button asChild size="lg" className="h-14 px-10 rounded-full bg-secondary text-primary hover:bg-white font-semibold text-lg">

@@ -3,8 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight, Coffee, Leaf, Sprout, Lightbulb, Users,
-  BarChart3, Globe, CheckCircle2, Clock, Award, TrendingUp,
-  Package, FlaskConical, Droplets, Sun, BookOpen, ShieldCheck
+  Globe, CheckCircle2, Award, TrendingUp,
+  Package, FlaskConical, Sun, BookOpen, ShieldCheck, TreePine, Handshake
 } from "lucide-react";
 
 import coffeeImg from "@/assets/hero-coffee.webp";
@@ -31,7 +31,7 @@ export default function Services() {
       {/* Hero */}
       <section className="relative h-[70vh] min-h-[560px] flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">
-          <img src={coffeeImg} alt="Coffee production" className="w-full h-full object-cover" />
+          <img src={coffeeImg} alt="Women sorting coffee" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/75 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/70" />
         </div>
@@ -41,7 +41,7 @@ export default function Services() {
               Our Services
             </motion.h1>
             <motion.p variants={fadeUp} className="text-xl md:text-2xl text-white/85 max-w-3xl mx-auto font-light leading-relaxed">
-              From seed to cup, from field to market — Umucyo Women Cooperative delivers integrated agricultural and business development services that create lasting value for our members and partners.
+              From the sorting table to the agroforestry plot — Umucyo Women Cooperative organizes, trains, and coordinates skilled women who create value across Rwanda's agricultural value chains.
             </motion.p>
           </motion.div>
         </div>
@@ -55,7 +55,7 @@ export default function Services() {
               { value: "7", label: "Core Service Areas" },
               { value: "30+", label: "Training Programs Annually" },
               { value: "90%", label: "Women-Led Workforce" },
-              { value: "250+", label: "Farmers Supported" },
+              { value: "2,000+", label: "Women Employed" },
             ].map((s, i) => (
               <motion.div
                 key={i}
@@ -73,8 +73,8 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Service 1 — Coffee Production */}
-      <section className="py-24 bg-background" id="coffee-production">
+      {/* Service 1 — Coffee Sorting & Grading */}
+      <section className="py-24 bg-background" id="coffee-sorting">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
@@ -85,23 +85,21 @@ export default function Services() {
                 <span className="text-sm font-bold tracking-widest text-secondary uppercase">Service 01</span>
               </motion.div>
               <motion.h2 variants={fadeUp} className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6">
-                Coffee Production & Sourcing
+                Coffee Sorting & Grading
               </motion.h2>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                We work with smallholder coffee farmers to produce and source high-quality Arabica coffee grown in Rwanda's fertile highlands at 1,500–2,000 metres above sea level. Our cooperative promotes rigorous Good Agricultural Practices (GAP) that protect soil health, conserve water, and maximize yield quality.
+                Coffee sorting is one of our largest sources of direct employment. Coffee processors require meticulous hand-sorting and grading to maintain the quality standards their business depends on — work that is skilled, essential, and too often treated as invisible labor.
               </motion.p>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Each lot is documented with full traceability — from the individual farmer and their plot, through harvesting and processing, to the export shipment — giving international buyers the assurance they need to meet their sourcing standards.
+                Umucyo organizes women into trained, accountable sorting teams that processors and washing stations can rely on — with fair, formal pay for work that has always mattered.
               </motion.p>
               <motion.div variants={stagger} className="space-y-3 mb-10">
                 {[
-                  "Certified seed supply and seedling distribution to members",
-                  "Soil fertility management and composting programs",
-                  "Shade-grown and climate-adapted variety selection",
-                  "Integrated pest and disease management (IPM)",
-                  "Plot-level GPS mapping and yield tracking",
-                  "Pre-harvest quality checks and cherry ripeness management",
-                  "Full lot-level traceability from farmer to export",
+                  "Trained, organized sorting and grading teams",
+                  "Defect removal and density separation to grade standard",
+                  "Fair, formal wages for skilled hand-sorting work",
+                  "Mobilized reliably around seasonal processing peaks",
+                  "Quality documentation supporting processors' certifications",
                 ].map((item, i) => (
                   <motion.div key={i} variants={fadeUp} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
@@ -110,7 +108,7 @@ export default function Services() {
                 ))}
               </motion.div>
               <motion.div variants={fadeUp} className="flex flex-wrap gap-3">
-                {["Arabica", "Grade A", "Traceable by lot", "GAP Compliant", "1,500–2,000m"].map(tag => (
+                {["Trained workforce", "Fair wages", "Quality-focused", "Seasonal & year-round"].map(tag => (
                   <span key={tag} className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold">{tag}</span>
                 ))}
               </motion.div>
@@ -122,11 +120,11 @@ export default function Services() {
               transition={{ duration: 0.8 }}
               className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl"
             >
-              <img src={coffeeImg} alt="Coffee production" className="w-full h-full object-cover" />
+              <img src={coffeeImg} alt="Women sorting coffee" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent" />
               <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">
                 <p className="text-white font-serif italic text-lg">
-                  "Our Arabica consistently cups between 82–87 on the SCA scale — a direct result of altitude, variety selection, and the care our farmers bring to every cherry."
+                  "Sorting is skilled work. Every bean a woman inspects is a decision that protects a processor's quality — and it deserves to be paid like the skill it is."
                 </p>
               </div>
             </motion.div>
@@ -134,8 +132,8 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Service 2 — Coffee Processing */}
-      <section className="py-24 bg-card" id="coffee-processing">
+      {/* Service 2 — Strengthening Agricultural Businesses */}
+      <section className="py-24 bg-card" id="business-partnership">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -145,7 +143,7 @@ export default function Services() {
               transition={{ duration: 0.8 }}
               className="relative h-[580px] rounded-3xl overflow-hidden shadow-2xl order-last lg:order-first"
             >
-              <img src={processingImg} alt="Coffee processing" className="w-full h-full object-cover" />
+              <img src={processingImg} alt="Organized workforce at a processing facility" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent" />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
@@ -156,20 +154,20 @@ export default function Services() {
                 <span className="text-sm font-bold tracking-widest text-secondary uppercase">Service 02</span>
               </motion.div>
               <motion.h2 variants={fadeUp} className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6">
-                Coffee Processing & Value Addition
+                Strengthening Agricultural Businesses
               </motion.h2>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Raw coffee cherries carry only a fraction of their eventual value. Through our cooperative's processing operations, we transform fresh cherry into export-grade green coffee — and increasingly into finished roasted and packaged products for domestic and regional markets.
+                Agricultural businesses thrive when they can rely on skilled people. Seasonal peaks often demand organized labour that can be mobilized efficiently without compromising quality — a need many businesses struggle to meet on their own.
               </motion.p>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Value addition at cooperative level means farmers receive a greater share of the final price. Instead of selling unprocessed cherry at the farm gate, members benefit from processing premiums that can double or triple their income per kilogram.
+                Rather than replacing cooperatives, processors, or washing stations, Umucyo works alongside them — making quality labour more accessible so businesses can focus on what they do best.
               </motion.p>
               <motion.div variants={stagger} className="grid grid-cols-2 gap-4 mb-8">
                 {[
-                  { icon: Droplets, label: "Wet Processing", desc: "Fully washed method for bright, clean cup profiles" },
-                  { icon: Sun, label: "Natural/Dry Process", desc: "Sun-dried naturals for fruited, complex flavors" },
-                  { icon: Package, label: "Sorting & Grading", desc: "Hand-sorting and density separation to Grade A" },
-                  { icon: Coffee, label: "Roasting & Packaging", desc: "Small-batch roasting for domestic and niche export" },
+                  { icon: Package, label: "Sorting & Grading", desc: "Organized teams for hand-sorting and density separation" },
+                  { icon: Sprout, label: "Field Operations", desc: "Disciplined support for horticulture production cycles" },
+                  { icon: Users, label: "Seasonal Mobilization", desc: "Reliable workforce scaling around harvest peaks" },
+                  { icon: ShieldCheck, label: "Accountability", desc: "Trained, supervised, and quality-focused teams" },
                 ].map((item, i) => (
                   <motion.div key={i} variants={fadeUp} className="bg-background rounded-2xl p-5 border border-border">
                     <item.icon className="w-6 h-6 text-secondary mb-3" />
@@ -180,7 +178,7 @@ export default function Services() {
               </motion.div>
               <motion.div variants={fadeUp}>
                 <Button asChild className="rounded-full h-12 px-8">
-                  <Link href="/products">View Product Specifications <ArrowRight className="ml-2 w-4 h-4" /></Link>
+                  <Link href="/our-model">See Our Model <ArrowRight className="ml-2 w-4 h-4" /></Link>
                 </Button>
               </motion.div>
             </motion.div>
@@ -188,7 +186,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Service 3 — Horticulture */}
+      {/* Service 3 — Horticulture Livelihoods */}
       <section className="py-24 bg-background" id="horticulture">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -200,23 +198,21 @@ export default function Services() {
                 <span className="text-sm font-bold tracking-widest text-secondary uppercase">Service 03</span>
               </motion.div>
               <motion.h2 variants={fadeUp} className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6">
-                Horticulture Production
+                Horticulture Livelihoods
               </motion.h2>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Alongside coffee, our members cultivate a diverse portfolio of high-value horticultural crops — from export-grade French beans and courgettes to passion fruit, avocado, tomatoes, and chili peppers. Our horticulture program ensures year-round income diversification for member households.
+                Agricultural households are often vulnerable when income depends on a single crop or harvest season. Alongside coffee, our members build a second income stream in horticulture — diversifying earnings and reducing exposure to seasonal fluctuations.
               </motion.p>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Production follows Good Agricultural Practices (GAP) and GlobalGAP-aligned standards, ensuring that fresh produce meets the food safety and quality requirements of domestic supermarkets, regional markets, and European importers.
+                Diversification does more than increase income. It enables families to plan for the future with greater confidence, improving food security and household resilience.
               </motion.p>
               <motion.div variants={stagger} className="space-y-3 mb-10">
                 {[
-                  "Year-round production planning and crop scheduling",
-                  "GAP and GlobalGAP-aligned farming protocols",
-                  "Post-harvest handling: cooling, cleaning, grading, packing",
-                  "Aggregation of produce from multiple member farms",
-                  "Cold chain management from farm to market",
-                  "Food safety audits and traceability documentation",
-                  "Market-linkage to supermarkets, exporters, and regional buyers",
+                  "Year-round income diversification for member households",
+                  "Field operations support for horticulture producers",
+                  "Post-harvest handling: cleaning, grading, and packing",
+                  "Good Agricultural Practice (GAP) skills training",
+                  "Reduced dependence on a single crop or season",
                 ].map((item, i) => (
                   <motion.div key={i} variants={fadeUp} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
@@ -232,7 +228,7 @@ export default function Services() {
               transition={{ duration: 0.8 }}
               className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl"
             >
-              <img src={hortImg} alt="Horticulture production" className="w-full h-full object-cover" />
+              <img src={hortImg} alt="Horticulture livelihoods" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent" />
             </motion.div>
           </div>
@@ -250,7 +246,7 @@ export default function Services() {
               transition={{ duration: 0.8 }}
               className="relative h-[560px] rounded-3xl overflow-hidden shadow-2xl order-last lg:order-first"
             >
-              <img src={meetingImg} alt="Farmer training" className="w-full h-full object-cover" />
+              <img src={meetingImg} alt="Training and capacity building" className="w-full h-full object-cover" />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
               <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
@@ -260,19 +256,17 @@ export default function Services() {
                 <span className="text-sm font-bold tracking-widest text-secondary uppercase">Service 04</span>
               </motion.div>
               <motion.h2 variants={fadeUp} className="text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
-                Farmer Training & Capacity Building
+                Training & Capacity Building
               </motion.h2>
               <motion.p variants={fadeUp} className="text-lg text-white/80 mb-6 leading-relaxed">
-                Productive, profitable, and resilient farmers are the foundation of Umucyo's cooperative model. We invest heavily in continuous learning — running over 30 structured training programs per year that cover every dimension of modern agribusiness.
+                Employment alone is not enough. Long-term prosperity depends on giving people the skills, confidence, and opportunities to keep growing throughout their careers. We invest heavily in continuous learning — running over 30 structured training programs per year.
               </motion.p>
               <motion.div variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
-                  { icon: Leaf, title: "Modern Agronomy", desc: "Soil management, irrigation, integrated pest management, and variety selection." },
-                  { icon: Sun, title: "Climate-Smart Agriculture", desc: "Drought-resistant varieties, water harvesting, and carbon sequestration practices." },
-                  { icon: Package, title: "Post-Harvest Handling", desc: "Reducing losses through proper storage, grading, and cold chain management." },
-                  { icon: TrendingUp, title: "Financial Literacy", desc: "Record keeping, savings mobilization, credit access, and cooperative finance." },
+                  { icon: ShieldCheck, title: "Workplace Professionalism", desc: "Quality standards, accountability, and occupational safety." },
+                  { icon: Sun, title: "Climate-Smart Agriculture", desc: "Agroforestry, soil conservation, and sustainable land management." },
+                  { icon: TrendingUp, title: "Financial Literacy", desc: "Record keeping, savings mobilization, and cooperative finance." },
                   { icon: BookOpen, title: "Cooperative Governance", desc: "Leadership training, democratic management, and cooperative law." },
-                  { icon: Award, title: "Agribusiness Development", desc: "Business planning, market analysis, and value chain participation." },
                 ].map((item, i) => (
                   <motion.div key={i} variants={fadeUp} className="bg-white/5 border border-white/10 rounded-2xl p-5">
                     <item.icon className="w-5 h-5 text-secondary mb-2" />
@@ -282,7 +276,7 @@ export default function Services() {
                 ))}
               </motion.div>
               <motion.p variants={fadeUp} className="text-white/70 text-sm italic">
-                Training is delivered through field demonstrations, group workshops, farm visits, and partnerships with RAB extension officers.
+                These investments turn seasonal work into a durable career — and a cooperative role into real leadership.
               </motion.p>
             </motion.div>
           </div>
@@ -304,18 +298,17 @@ export default function Services() {
                 Women's Economic Empowerment
               </motion.h2>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Empowering women is not one service among many — it is the foundational purpose of everything we do. With 90% women membership, Umucyo is structured to ensure that women are not merely participants in agriculture but owners, leaders, and beneficiaries of the value they create.
+                Empowering women is not one service among many — it is the foundational purpose of everything we do. With 90% women membership, Umucyo is structured to ensure that women are not merely participants in agriculture but skilled professionals, leaders, and beneficiaries of the value they create.
               </motion.p>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Our empowerment programs go beyond farming to address the structural barriers that prevent women from accessing leadership roles, financial services, and business opportunities.
+                Our empowerment programs go beyond employment to address the structural barriers that prevent women from accessing leadership roles, financial services, and career progression.
               </motion.p>
               <motion.div variants={stagger} className="space-y-4 mb-10">
                 {[
                   { title: "Leadership Development", desc: "Structured mentorship and training for women aspiring to cooperative leadership and management roles." },
-                  { title: "Entrepreneurship Programs", desc: "Business planning support, market access facilitation, and incubation for women-led agribusinesses." },
                   { title: "Financial Inclusion", desc: "Savings groups (VSLAs), linkages to microfinance institutions, and mobile banking adoption." },
-                  { title: "Youth Employment", desc: "Internships, apprenticeships, and structured entry pathways for young women into the agricultural sector." },
-                  { title: "Skills Development", desc: "Vocational training in food processing, quality control, bookkeeping, and cooperative administration." },
+                  { title: "Youth Employment", desc: "Structured entry pathways and apprenticeships for young women into agricultural value chains." },
+                  { title: "Skills Development", desc: "Vocational training in quality control, bookkeeping, and cooperative administration." },
                   { title: "Rights & Advocacy", desc: "Land rights education, gender-based violence awareness, and women's rights in cooperative governance." },
                 ].map((item, i) => (
                   <motion.div key={i} variants={fadeUp} className="flex items-start gap-4 p-4 bg-background rounded-xl border border-border">
@@ -346,8 +339,8 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Service 6 — Extension */}
-      <section className="py-24 bg-background" id="extension">
+      {/* Service 6 — Agroforestry & Climate Action */}
+      <section className="py-24 bg-background" id="climate-action">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -357,33 +350,31 @@ export default function Services() {
               transition={{ duration: 0.8 }}
               className="relative h-[540px] rounded-3xl overflow-hidden shadow-2xl order-last lg:order-first"
             >
-              <img src={rwandaImg} alt="Agricultural extension" className="w-full h-full object-cover" />
+              <img src={rwandaImg} alt="Agroforestry and land stewardship" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent" />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
               <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
-                  <BarChart3 className="w-6 h-6 text-primary" />
+                  <TreePine className="w-6 h-6 text-primary" />
                 </div>
                 <span className="text-sm font-bold tracking-widest text-secondary uppercase">Service 06</span>
               </motion.div>
               <motion.h2 variants={fadeUp} className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6">
-                Agricultural Extension Services
+                Agroforestry & Climate Action
               </motion.h2>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our extension services bridge the gap between agricultural research and on-farm application. Working in partnership with RAB (Rwanda Agriculture and Animal Resources Development Board), we deploy field extension officers who visit member farms regularly to provide hands-on technical support.
+                Agriculture depends on healthy landscapes, and healthy landscapes depend on responsible stewardship. Across member farms, we integrate agroforestry — shade trees, soil-conserving cover crops, and sustainable land management — into everyday coffee and horticulture production.
               </motion.p>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Extension services ensure that improved technologies, new varieties, and best practices developed at research stations are adopted rapidly and correctly by our member farmers.
+                Healthier soil and water systems aren't a side effect of our work; they are the foundation the next generation of jobs depends on.
               </motion.p>
               <motion.div variants={stagger} className="grid grid-cols-2 gap-4">
                 {[
-                  { icon: ShieldCheck, title: "Farm Visits", desc: "Regular on-farm visits and individual advisory sessions." },
-                  { icon: Lightbulb, title: "Demonstrations", desc: "Field demonstrations of new techniques and technologies." },
-                  { icon: BookOpen, title: "Technology Access", desc: "Access to improved seeds, inputs, and equipment." },
-                  { icon: TrendingUp, title: "Productivity Monitoring", desc: "Yield tracking and data collection per plot." },
-                  { icon: Leaf, title: "Env. Compliance", desc: "Environmental audits and sustainable farming guidance." },
-                  { icon: Clock, title: "Seasonal Planning", desc: "Crop calendars, input planning, and risk management." },
+                  { icon: TreePine, title: "Agroforestry", desc: "Shade trees integrated into coffee and horticulture plots." },
+                  { icon: Leaf, title: "Soil Conservation", desc: "Cover crops and composting to protect soil health." },
+                  { icon: Sun, title: "Water Stewardship", desc: "Practices that protect the watersheds farms depend on." },
+                  { icon: ShieldCheck, title: "Climate Adaptation", desc: "Training that prepares members for a changing climate." },
                 ].map((item, i) => (
                   <motion.div key={i} variants={fadeUp} className="bg-card rounded-2xl p-5 border border-border">
                     <item.icon className="w-5 h-5 text-secondary mb-2" />
@@ -397,80 +388,29 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Service 7 — Market Linkages */}
-      <section className="py-24 bg-primary text-white" id="market-linkages">
+      {/* Service 7 — Environmental Stewardship, Rewarded */}
+      <section className="py-24 bg-primary text-white" id="stewardship">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-3xl mx-auto text-center">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-              <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
+              <motion.div variants={fadeUp} className="flex items-center justify-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center">
-                  <Globe className="w-6 h-6 text-secondary" />
+                  <Leaf className="w-6 h-6 text-secondary" />
                 </div>
                 <span className="text-sm font-bold tracking-widest text-secondary uppercase">Service 07</span>
               </motion.div>
-              <motion.h2 variants={fadeUp} className="text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
-                Market Linkages & Partner Connections
+              <motion.h2 variants={fadeUp} className="text-4xl lg:text-5xl font-serif font-bold text-white mb-4">
+                Environmental Stewardship, Rewarded
               </motion.h2>
+              <motion.span variants={fadeUp} className="inline-block text-xs font-bold tracking-widest uppercase text-primary bg-secondary px-3 py-1 rounded-full mb-6">
+                Commitment in progress
+              </motion.span>
               <motion.p variants={fadeUp} className="text-lg text-white/80 mb-6 leading-relaxed">
-                Access to profitable, stable markets is the critical final step in value chain development. Rather than compete with the exporters who move Rwandan produce to the world, Umucyo works alongside them — as a trusted producer partner connecting our member farmers' quality produce to buyers who pay fair prices.
+                Rwanda's women farmers are already among its most consistent environmental stewards — planting trees, conserving soil, protecting water sources — and rarely its most compensated.
               </motion.p>
-              <motion.p variants={fadeUp} className="text-lg text-white/80 mb-8 leading-relaxed">
-                Our market linkage services include quality documentation, buyer introductions through our licensed export partners, and long-term relationship management — so that every sale translates into stable income and dignified work for the women and youth who grow it.
+              <motion.p variants={fadeUp} className="text-lg text-white/80 leading-relaxed">
+                We are actively designing a model to change that: rewarding the women who do this conservation work directly, rather than treating stewardship as an unpaid obligation layered on top of farming. It's a direction we're building toward, and one we're seeking the right partners to help us shape.
               </motion.p>
-              <motion.div variants={stagger} className="space-y-3 mb-10">
-                {[
-                  "Full compliance with cooperative law and food-safety standards",
-                  "Buyer identification and qualification alongside our NAEB-licensed export partners",
-                  "Supply agreements with exporters and trade partners for member produce",
-                  "Quality documentation and traceability records supporting our partners' export certifications",
-                  "Domestic supermarket and hospitality sector linkages",
-                  "Participation in trade fairs and buyer showcases",
-                  "Long-term commercial partnership development",
-                  "Stable income and employment pathways for women and youth through consistent market access",
-                ].map((item, i) => (
-                  <motion.div key={i} variants={fadeUp} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-white/85">{item}</span>
-                  </motion.div>
-                ))}
-              </motion.div>
-              <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
-                <Button asChild size="lg" className="rounded-full bg-secondary text-primary hover:bg-white h-12 px-8 font-semibold">
-                  <Link href="/products">View Our Products</Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="rounded-full border-white/30 text-white hover:bg-white hover:text-primary h-12 px-8 transition-colors">
-                  <Link href="/contact">Start a Conversation</Link>
-                </Button>
-              </motion.div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="grid grid-cols-2 gap-4"
-            >
-              {[
-                { label: "Countries Reached", value: "5+", sub: "Markets reached via our export partners" },
-                { label: "Cooperative Status", value: "NAEB", sub: "Registered cooperative & affiliate" },
-                { label: "Market Types", value: "Local & Intl", sub: "Domestic, regional, and global" },
-                { label: "Supply Model", value: "Via Partners", sub: "Sold through licensed exporters" },
-                { label: "MOQ", value: "1 Bag", sub: "Minimum 60kg, samples available" },
-                { label: "Buyer Types", value: "All", sub: "Roasters, importers, retailers" },
-              ].map((stat, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.08 }}
-                  className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center"
-                >
-                  <div className="text-2xl font-serif font-bold text-secondary mb-1">{stat.value}</div>
-                  <div className="text-white font-semibold text-sm mb-1">{stat.label}</div>
-                  <div className="text-white/50 text-xs">{stat.sub}</div>
-                </motion.div>
-              ))}
             </motion.div>
           </div>
         </div>
@@ -485,15 +425,15 @@ export default function Services() {
               An integrated, end-to-end approach.
             </h3>
             <p className="text-muted-foreground text-lg">
-              Our services are not siloed — they work together across the full agricultural value chain to create compounding impact.
+              Our services are not siloed — they work together to turn essential agricultural work into decent, lasting employment.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { step: "01", icon: Leaf, title: "Organize & Train", desc: "We begin by building the capacity of our member farmers — providing training, inputs, and technical advisory before the season starts." },
-              { step: "02", icon: Sprout, title: "Produce & Process", desc: "Members farm following GAP standards while our extension officers monitor quality at every growth stage, from flowering to harvest." },
-              { step: "03", icon: Award, title: "Aggregate & Grade", desc: "Produce is aggregated at collection centers, processed, sorted, graded, and documented for quality assurance and traceability." },
-              { step: "04", icon: Globe, title: "Connect to Market", desc: "Graded, compliant produce is linked to verified buyers — locally, regionally, or internationally — at prices that reward quality." },
+              { step: "01", icon: Users, title: "Organize", desc: "We recruit and organize women into a trained, accountable, professional workforce." },
+              { step: "02", icon: BookOpen, title: "Train", desc: "Members build technical, financial, and leadership skills through continuous learning programs." },
+              { step: "03", icon: Handshake, title: "Deploy", desc: "Trained teams are mobilized to support coffee sorting, horticulture, and agroforestry work." },
+              { step: "04", icon: Award, title: "Reward", desc: "Members earn fair, formal pay — with stewardship work recognized as the next frontier." },
             ].map((step, i) => (
               <motion.div
                 key={i}
@@ -523,17 +463,17 @@ export default function Services() {
               <div className="p-12 lg:p-16">
                 <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-4">Work With Us</h2>
                 <h3 className="text-4xl font-serif font-bold text-white mb-6">
-                  Ready to source premium Rwandan produce?
+                  Ready for a workforce you can rely on?
                 </h3>
                 <p className="text-white/80 text-lg mb-8 leading-relaxed">
-                  Whether you are an exporter, an international buyer, a development organization, or a government institution — we have services designed to create value for you while creating dignified jobs and income for our women and youth members.
+                  Whether you are an exporter, a processor, a development organization, or a government institution — we have services designed to create value for you while creating dignified jobs and income for our women and youth members.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button asChild size="lg" className="rounded-full bg-secondary text-primary hover:bg-white h-12 px-8 font-semibold">
                     <Link href="/contact">Get in Touch</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="rounded-full border-white/30 text-white hover:bg-white hover:text-primary h-12 px-8 transition-colors">
-                    <Link href="/products">View Products <ArrowRight className="ml-2 w-4 h-4" /></Link>
+                    <Link href="/our-model">See Our Model <ArrowRight className="ml-2 w-4 h-4" /></Link>
                   </Button>
                 </div>
               </div>

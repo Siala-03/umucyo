@@ -11,7 +11,7 @@ import Services from "@/pages/services";
 import Partners from "@/pages/partners";
 import Contact from "@/pages/contact";
 import Impact from "@/pages/impact";
-import Products from "@/pages/products";
+import OurModel from "@/pages/our-model";
 
 const queryClient = new QueryClient();
 
@@ -21,7 +21,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
-      <Route path="/products" component={Products} />
+      <Route path="/our-model" component={OurModel} />
       <Route path="/impact" component={Impact} />
       <Route path="/partners" component={Partners} />
       <Route path="/contact" component={Contact} />
