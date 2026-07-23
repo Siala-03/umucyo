@@ -36,7 +36,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-white/90 max-w-2xl mx-auto font-light"
           >
-            Some organizations begin with an idea. Umucyo began with a problem: the women who sustain Rwanda's agriculture deserved more than appreciation — they deserved opportunity.
+Rwanda's coffee doesn't sort itself, and its fields don't tend themselves. For years, that was women's work — done well, done quietly, and rarely paid what it was worth. Umucyo started because that needed to change.
           </motion.p>
         </div>
       </section>
@@ -52,19 +52,19 @@ export default function About() {
               variants={fadeUp}
             >
               <h2 className="text-secondary font-bold tracking-widest uppercase mb-4 text-sm">Origins</h2>
-              <h3 className="text-4xl font-serif font-bold text-primary mb-6">Founded in 2022, named for the light of opportunity.</h3>
+              <h3 className="text-4xl font-serif font-bold text-primary mb-6">Founded in 2022, named after the Kinyarwanda word for light.</h3>
               <div className="prose prose-lg text-muted-foreground">
                 <p>
-                  Across coffee-growing communities and horticultural landscapes, women were already doing essential work — sorting coffee with remarkable precision, cultivating crops that supported household incomes, and keeping agricultural value chains moving every season. Yet for many, this work remained informal, inconsistent, and undervalued. The challenge was never a lack of skill or commitment. It was the absence of structured pathways that could turn essential agricultural work into stable employment and long-term opportunity.
+                  Long before Umucyo existed, the women were already there. Sitting for hours at sorting tables, picking defective beans out by hand. Tending horticulture plots alongside their own family farms. Showing up, season after season, to keep coffee and produce moving. Most of it was never even called a job — just something women did, on top of everything else they did.
                 </p>
                 <p>
-                  Recognizing this gap, a group of women came together in 2022 with a shared vision: to build a cooperative that would place women at the centre of agricultural development — not as beneficiaries of support, but as skilled professionals, leaders, and contributors to Rwanda's growing agricultural economy. That vision became Umucyo Women Cooperative. The name <em>Umucyo</em>, meaning "light" in Kinyarwanda, reflects more than optimism — it represents opportunity, dignity, and the belief that sustainable development begins when people are equipped to build better futures for themselves.
+                  In 2022, a small group of us decided that had to change. Not with another program promising to "empower" women from the outside, but with an actual cooperative — built and run by the women doing the work. We named it Umucyo, which simply means <em>light</em> in Kinyarwanda. It's a plain word, but it said what we meant: this was about opportunity, not charity.
                 </p>
                 <p>
-                  From the beginning, Umucyo chose a different path. Rather than becoming another agricultural producer, processor, or exporter, we positioned the cooperative as a <strong>workforce and livelihoods partner</strong> — an organization that strengthens existing agricultural value chains by investing in the people who sustain them. We do not compete with coffee exporters. We do not replace cooperatives or washing stations. We do not market agricultural commodities. Instead, we organize, train, and coordinate skilled women who contribute to quality, productivity, and responsible employment across the value chain.
+                  We also made a decision early on that's shaped everything since: we weren't going to become another coffee exporter or produce trader elbowing into a crowded market. Umucyo doesn't buy, process, or sell coffee and horticulture — the businesses already doing that don't need a competitor. What they need is a workforce they can rely on, and that's what we built. We organize women into paid, trained teams and send them where the work is — sorting, grading, tending fields — so businesses get consistency and our members get an actual wage for skilled work.
                 </p>
                 <p>
-                  Today, Umucyo is a cooperative of more than <strong>2,000 women</strong>, with approximately <strong>90% of its membership</strong> made up of women from across Rwanda's agricultural communities. This isn't just a statistic — it's our fundamental operational philosophy.
+                  Today that's grown into more than <strong>2,000 women</strong>, about <strong>90% of our membership</strong>, working across coffee and horticulture communities in Rwanda. We didn't set out to hit a number. It just turned out to be the size of doing this properly.
                 </p>
               </div>
             </motion.div>
