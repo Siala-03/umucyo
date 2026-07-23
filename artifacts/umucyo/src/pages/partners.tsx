@@ -13,6 +13,11 @@ import rwandaImg from "@/assets/rwanda-landscape.webp";
 import meetingImg from "@/assets/coop-meeting.webp";
 import hortImg from "@/assets/horticulture.webp";
 
+import logoMinagri from "@/assets/logo-minagri.webp";
+import logoRab from "@/assets/logo-rab.webp";
+import logoMinema from "@/assets/logo-minema.webp";
+import logoNaeb from "@/assets/logo-naeb.webp";
+
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
@@ -38,6 +43,7 @@ const partners = [
     ],
     impact: "MINAGRI's support provides Umucyo with the policy framework and institutional backing needed to scale a workforce model that creates decent jobs across the agricultural sector.",
     img: coffeeImg,
+    logo: logoMinagri,
   },
   {
     acronym: "RAB",
@@ -53,6 +59,7 @@ const partners = [
     ],
     impact: "RAB's technical partnership equips our workforce with the latest agricultural research and hands-on advisory — strengthening the skills members bring to every job.",
     img: hortImg,
+    logo: logoRab,
   },
   {
     acronym: "MINEMA",
@@ -68,6 +75,7 @@ const partners = [
     ],
     impact: "In a country where climate variability poses real risks to agricultural livelihoods, MINEMA's partnership helps ensure our members are prepared, protected, and equipped to adapt — and paves the way toward rewarding their stewardship work.",
     img: rwandaImg,
+    logo: logoMinema,
   },
   {
     acronym: "NAEB",
@@ -83,6 +91,7 @@ const partners = [
     ],
     impact: "As our host institution, NAEB connects Umucyo's trained workforce to the exporters and processors who need it — without Umucyo ever needing to become an exporter itself.",
     img: meetingImg,
+    logo: logoNaeb,
   },
 ];
 
@@ -143,6 +152,31 @@ export default function Partners() {
               Sustainable transformation in Rwanda's agricultural sector requires the alignment of government policy, technical expertise, market access, and community leadership. Umucyo works at the intersection of all four.
             </motion.p>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Institutional Logo Strip */}
+      <section className="py-14 bg-card border-b border-border">
+        <div className="container mx-auto px-6 lg:px-12">
+          <p className="text-center text-xs font-bold tracking-widest text-secondary uppercase mb-8">Trusted Institutional Partners</p>
+          <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+            {partners.map((partner, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="flex items-center justify-center"
+              >
+                <img
+                  src={partner.logo}
+                  alt={`${partner.acronym} logo`}
+                  className="h-14 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -212,9 +246,11 @@ export default function Partners() {
                 <motion.div variants={fadeUp} className={`inline-block px-4 py-1.5 rounded-full text-white text-xs font-bold tracking-widest uppercase mb-4 ${partner.color}`}>
                   Institutional Partner
                 </motion.div>
-                <motion.div variants={fadeUp} className="mb-2">
-                  <span className={`text-5xl font-serif font-bold ${partner.color.replace("bg-", "text-").replace("-700", "-800").replace("-primary", "-primary")}`}
-                    style={{ color: "hsl(var(--primary))" }}>
+                <motion.div variants={fadeUp} className="flex items-center gap-4 mb-2">
+                  <div className="bg-white rounded-2xl p-3 shadow-sm shrink-0">
+                    <img src={partner.logo} alt={`${partner.acronym} logo`} className="h-14 w-auto object-contain" />
+                  </div>
+                  <span className="text-4xl font-serif font-bold" style={{ color: "hsl(var(--primary))" }}>
                     {partner.acronym}
                   </span>
                 </motion.div>
@@ -249,6 +285,9 @@ export default function Partners() {
               >
                 <img src={partner.img} alt={partner.name} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
+                <div className="absolute top-6 left-6 bg-white rounded-xl p-2 shadow-sm">
+                  <img src={partner.logo} alt={`${partner.acronym} logo`} className="h-10 w-auto object-contain" />
+                </div>
                 <div className="absolute bottom-8 left-8 right-8">
                   <div className="text-4xl font-serif font-bold text-white mb-1">{partner.acronym}</div>
                   <div className="text-white/70 text-sm">{partner.name}</div>
